@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>陈奕好 - 人工智能算法工程师简历</title>
+
+    <!-- 图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <style>
+        /* =======================
+   全局设置
+======================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2e8aa0;
+            --primary-dark: #236d7f;
+            --primary-light: #43a8c2;
+            --sidebar-bg: linear-gradient(180deg, #2e8aa0 0%, #43a8c2 100%);
+            --text: #333;
+            --text-light: #666;
+            --muted: #999;
+            --bg: #f4f7f9;
+            --white: #ffffff;
+            --shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        body {
+            font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.75;
+            padding: 30px 0;
+        }
+
+        /* =======================
+   页面容器
+======================= */
+        .resume {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: #fff;
+            display: grid;
+            grid-template-columns: 2.35fr 1fr;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        /* =======================
+   左侧主体
+======================= */
+        .main {
+            padding: 50px 55px 45px 55px;
+        }
+
+        /* 标题 */
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .name {
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: 2px;
+            line-height: 1.1;
+        }
+
+        .target {
+            margin-top: 10px;
+            display: inline-block;
+            font-size: 15px;
+            color: var(--primary);
+            font-weight: 700;
+            padding: 6px 14px;
+            border: 1px solid rgba(46, 138, 160, 0.2);
+            border-radius: 999px;
+            background: rgba(46, 138, 160, 0.06);
+        }
+
+        /* 章节 */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-dark);
+        }
+
+        .section-title .icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        /* 教育背景 */
+        .edu-card {
+            padding: 18px 22px;
+            background: #f8fcfd;
+            border-left: 4px solid var(--primary);
+            border-radius: 10px;
+        }
+
+        .edu-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .edu-school {
+            font-size: 21px;
+            font-weight: 700;
+        }
+
+        .edu-time {
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .edu-major {
+            margin-top: 4px;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .edu-detail {
+            margin-top: 10px;
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        /* 条目 */
+        .item {
+            margin-bottom: 22px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-size: 19px;
+            font-weight: 700;
+            color: #222;
+        }
+
+        .item-time {
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .item-subtitle {
+            margin-top: 2px;
+            font-size: 14px;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .item ul {
+            margin-top: 8px;
+            padding-left: 20px;
+        }
+
+        .item li {
+            margin-bottom: 4px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* 技能标签 */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 8px;
+        }
+
+        .tag {
+            padding: 5px 10px;
+            border-radius: 999px;
+            background: rgba(46, 138, 160, 0.08);
+            color: var(--primary-dark);
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        /* =======================
+   右侧栏
+======================= */
+        .sidebar {
+            background: var(--sidebar-bg);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 顶部头像区 */
+        .profile {
+            padding: 28px 24px 24px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.08);
+        }
+
+        .avatar {
+            width: 110px;
+            height: 145px;
+            margin: 0 auto 18px;
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.18);
+            border: 3px solid rgba(255, 255, 255, 0.22);
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar-name {
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .sidebar-role {
+            margin-top: 6px;
+            font-size: 15px;
+            opacity: 0.95;
+        }
+
+        /* 联系方式 */
+        .contact {
+            padding: 26px 28px 10px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+            font-size: 14px;
+            word-break: break-all;
+        }
+
+        .contact-item i {
+            width: 18px;
+            text-align: center;
+            opacity: 0.95;
+        }
+
+        /* 右侧模块 */
+        .sidebar-section {
+            padding: 18px 28px;
+        }
+
+        .sidebar-title {
+            font-size: 23px;
+            font-weight: 800;
+            margin-bottom: 14px;
+        }
+
+        .sidebar-block {
+            margin-bottom: 18px;
+        }
+
+        .sidebar-block:last-child {
+            margin-bottom: 0;
+        }
+
+        .sidebar-block strong {
+            display: block;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+
+        .sidebar-block span {
+            display: block;
+            font-size: 13px;
+            opacity: 0.95;
+            line-height: 1.6;
+        }
+
+        /* 奖项列表 */
+        .awards-list {
+            list-style: none;
+        }
+
+        .awards-list li {
+            position: relative;
+            padding-left: 16px;
+            margin-bottom: 8px;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .awards-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-weight: bold;
+        }
+
+        /* =======================
+   打印优化
+======================= */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .resume {
+                width: 100%;
+                min-height: auto;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+
+        /* =======================
+   响应式
+======================= */
+        @media (max-width: 1000px) {
+            .resume {
+                width: 100%;
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                order: -1;
+            }
+
+            .main {
+                padding: 35px 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <!-- ================= 左侧主体 ================= -->
+        <main class="main">
+
+            <!-- 顶部 -->
+            <header class="header">
+                <h1 class="name">陈奕好</h1>
+                <div class="target">求职方向：机器人算法工程师 & 计算机视觉工程师
+                </div>
+            </header>
+
+            <!-- 教育背景 -->
+            <section class="section">
+                <h2 class="section-title">
+                    <span class="icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                    教育背景
+                </h2>
+
+                <div class="edu-card">
+                    <div class="edu-top">
+                        <div class="edu-school">上海对外经贸大学</div>
+                        <div class="edu-time">2024.09 – 至今</div>
+                    </div>
+                    <div class="edu-major">
+                        人工智能专业（GPA 3.68 / 4.0，专业排名 6 / 147）
+                    </div>
+                    <div class="edu-detail">
+                        CET-4 632 分｜CET-6 512 分｜熟练掌握 Python、C++、MySQL、机器学习建模与 AI 工具应用
+                    </div>
+                </div>
+            </section>
+
+            <!-- 专业项目 -->
+            <section class="section">
+                <h2 class="section-title">
+                    <span class="icon"><i class="fa-solid fa-diagram-project"></i></span>
+                    专业项目
+                </h2>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-title">2026 美国大学生数学建模竞赛（MCM）</div>
+                        <div class="item-time">S 奖</div>
+                    </div>
+                    <div class="item-subtitle">DWTS 评分机制建模</div>
+                    <ul>
+                        <li>负责观众投票隐变量反推模型构建、评分规则公平性分析与优化机制设计。</li>
+                        <li>使用 Python 进行数据分析、参数调优和可视化，结合 AI 工具验证模型可靠性。</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-title">2025 全国大学生数学建模大赛</div>
+                        <div class="item-time">直通国赛</div>
+                    </div>
+                    <div class="item-subtitle">航班超售问题优化</div>
+                    <ul>
+                        <li>构建收益函数模型、补偿策略分析及最优超售订票数量求解。</li>
+                        <li>使用 MATLAB、LaTeX、PyCharm 完成建模、编程与论文撰写。</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-title">新质生产力产创融合实训营</div>
+                        <div class="item-time">优秀学员</div>
+                    </div>
+                    <div class="item-subtitle">DeepSeek 应用方向</div>
+                    <ul>
+                        <li>建立个人 AI 应用图谱，结合问题拆解方法显著提升解决问题效率。</li>
+                        <li>独立完成 AI 海报生成项目并在校园展示。</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 实践经历 -->
+            <section class="section">
+                <h2 class="section-title">
+                    <span class="icon"><i class="fa-solid fa-briefcase"></i></span>
+                    实践经历
+                </h2>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-title">AI+ 社团（校首个人工智能社团）</div>
+                        <div class="item-time">2025.02 – 至今</div>
+                    </div>
+                    <div class="item-subtitle">产品部副部长 / 创始成员</div>
+                    <ul>
+                        <li>参与社团定位、发展理念与目标制定。</li>
+                        <li>组织两场 AI 知识分享会，与会人数均超过 100 人，并获校公众号报道。</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <div class="item-header">
+                        <div class="item-title">微信公众号「智人统治天下」</div>
+                        <div class="item-time">2025.02 – 至今</div>
+                    </div>
+                    <div class="item-subtitle">独立运营</div>
+                    <ul>
+                        <li>持续输出人工智能历史、技术趋势与产业洞察。</li>
+                        <li>累计撰写 20+ 篇原创文章，总计 40,000+ 字。</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ================= 右侧栏 ================= -->
+        <aside class="sidebar">
+
+            <!-- 头像区 -->
+            <div class="profile">
+                <div class="avatar">
+                    <!-- 将你的证件照命名为 photo.jpg 放在同目录下 -->
+                    <img src="证件照.png" alt="证件照">
+                </div>
+                <div class="sidebar-name">陈奕好</div>
+                <div class="sidebar-role">Artificial Intelligence Engineer</div>
+            </div>
+
+            <!-- 联系方式 -->
+            <div class="contact">
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>19526196339</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>JonathanChenAI@163.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>上海</span>
+                </div>
+            </div>
+
+            <!-- 核心技能 -->
+            <div class="sidebar-section">
+                <div class="sidebar-title">技能</div>
+
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">C++</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">MATLAB</span>
+                    <span class="tag">LaTeX</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">Prompt Engineering</span>
+                </div>
+            </div>
+
+            <!-- 奖项 -->
+            <div class="sidebar-section">
+                <div class="sidebar-title">奖项</div>
+                <ul class="awards-list">
+                    <li>校二等奖学金 × 2</li>
+                    <li>校三等奖学金 × 1</li>
+                    <li>全国大学生英语翻译大赛上海市二等奖（前 5%）</li>
+                    <li>美国大学生数学建模竞赛（MCM）S 奖</li>
+                </ul>
+            </div>
+
+            <!-- 语言 -->
+            <div class="sidebar-section">
+                <div class="sidebar-title">语言</div>
+
+
+                <div class="sidebar-block">
+                    <strong>英语</strong>
+                    <span>CET-4 632｜CET-6 512</span>
+                </div>
+            </div>
+
+        </aside>
+    </div>
+
+</body>
+
+</html>
+```
