@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html data-page-node-id="rIn3ysp51yfRBZohSI0lFx" lang="zh-CN">
+<head data-page-node-id="blQp6tzjchFiI49QAJtw5s">
+
+<meta data-page-node-id="PcW0rzHLhZjVdGC7volaPs" charset="UTF-8">
+<meta data-page-node-id="0M73kJn7ZOSEgnfpe6Z6QS" content="width=device-width, initial-scale=1.0" name="viewport">
+<title data-page-node-id="cGnygujXZgjJBjbDgxWBKB" data-pnid-children="0lhkG7GuoBrI8lycPxEcZo">保研路线图 · 2028届 · 上海985/211</title>
+<style data-page-node-id="EQqmqQ69dOuDpQtd4EOpQ3" data-pnid-children="Imq2bftP3mHte0389rwPMk">
+  :root{
+    --bg:#f5f6f8; --card:#fff; --ink:#16181d; --sub:#5b6472; --line:#e4e7ec;
+    --accent:#1f4e8c; --accent-soft:#eef3fa;
+    --warn:#a15c07; --warn-soft:#fdf6e7;
+    --danger:#a8201a; --danger-soft:#fbeeed;
+    --ok:#146c43; --ok-soft:#edf7f1;
+    --chip:#eef1f5;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",sans-serif;
+    font-size:15px; line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 28px 100px;}
+  /* ---- header ---- */
+  header{padding:56px 0 34px; border-bottom:1px solid var(--line); margin-bottom:34px;}
+  .kicker{font-size:12px; letter-spacing:.16em; color:var(--sub); text-transform:uppercase; margin-bottom:14px;}
+  h1{font-size:34px; line-height:1.3; margin:0 0 16px; letter-spacing:-.01em; font-weight:700;}
+  .lede{font-size:16px; color:var(--sub); max-width:760px; margin:0;}
+  .meta{margin-top:22px; display:flex; gap:22px; flex-wrap:wrap; font-size:13px; color:var(--sub);}
+  .meta b{color:var(--ink); font-weight:600;}
+  /* ---- nav ---- */
+  nav{
+    position:sticky; top:0; z-index:20; background:rgba(245,246,248,.94);
+    backdrop-filter:blur(8px); border-bottom:1px solid var(--line); margin-bottom:38px;
+  }
+  nav .inner{max-width:1080px; margin:0 auto; padding:0 28px; display:flex; gap:4px; overflow-x:auto;}
+  nav a{
+    color:var(--sub); text-decoration:none; font-size:13px; padding:13px 11px;
+    white-space:nowrap; border-bottom:2px solid transparent;
+  }
+  nav a:hover{color:var(--accent); border-bottom-color:var(--accent);}
+  /* ---- section ---- */
+  section{margin-bottom:56px; scroll-margin-top:64px;}
+  h2{font-size:21px; margin:0 0 6px; font-weight:700; letter-spacing:-.005em;}
+  h2 .num{color:var(--accent); font-variant-numeric:tabular-nums; margin-right:10px; font-weight:600;}
+  .sub{color:var(--sub); font-size:14px; margin:0 0 22px;}
+  h3{font-size:16px; margin:30px 0 12px; font-weight:650;}
+  h4{font-size:14px; margin:20px 0 8px; font-weight:650; color:var(--ink);}
+  p{margin:0 0 14px;}
+  /* ---- cards ---- */
+  .card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 24px;}
+  .grid{display:grid; gap:16px;}
+  .g2{grid-template-columns:1fr 1fr;}
+  .g3{grid-template-columns:repeat(3,1fr);}
+  @media(max-width:820px){.g2,.g3{grid-template-columns:1fr;}}
+  .verdict{display:grid; grid-template-columns:repeat(3,1fr); gap:0; background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden;}
+  .verdict > div{padding:20px 22px; border-right:1px solid var(--line);}
+  .verdict > div:last-child{border-right:none;}
+  .verdict .t{font-size:12px; color:var(--sub); letter-spacing:.08em; margin-bottom:8px;}
+  .verdict .v{font-size:15px; font-weight:650; line-height:1.5;}
+  @media(max-width:820px){.verdict{grid-template-columns:1fr;} .verdict > div{border-right:none; border-bottom:1px solid var(--line);}}
+  /* ---- tags ---- */
+  .tag{display:inline-block; font-size:11.5px; padding:2px 8px; border-radius:5px; font-weight:600; letter-spacing:.02em; vertical-align:middle;}
+  .t-red{background:var(--danger-soft); color:var(--danger);}
+  .t-amber{background:var(--warn-soft); color:var(--warn);}
+  .t-green{background:var(--ok-soft); color:var(--ok);}
+  .t-blue{background:var(--accent-soft); color:var(--accent);}
+  .t-gray{background:var(--chip); color:var(--sub);}
+  /* ---- table ---- */
+  .tbl-wrap{overflow-x:auto; border:1px solid var(--line); border-radius:12px; background:var(--card);}
+  table{width:100%; border-collapse:collapse; font-size:13.5px;}
+  th,td{padding:12px 14px; text-align:left; border-bottom:1px solid var(--line); vertical-align:top;}
+  th{background:#fafbfc; font-weight:650; font-size:12.5px; color:var(--sub); white-space:nowrap;}
+  tr:last-child td{border-bottom:none;}
+  td.num{font-variant-numeric:tabular-nums; white-space:nowrap;}
+  tr.hl td{background:#fbfcfe;}
+  /* ---- timeline ---- */
+  .tl{position:relative; margin-left:6px;}
+  .tl::before{content:""; position:absolute; left:9px; top:8px; bottom:8px; width:2px; background:var(--line);}
+  .node{position:relative; padding-left:38px; margin-bottom:26px;}
+  .node::before{
+    content:""; position:absolute; left:3px; top:8px; width:14px; height:14px;
+    border-radius:50%; background:#fff; border:2.5px solid var(--accent);
+  }
+  .node.crit::before{background:var(--danger); border-color:var(--danger);}
+  .node.done::before{background:var(--sub); border-color:var(--sub);}
+  .node .when{font-size:12.5px; color:var(--accent); font-weight:650; letter-spacing:.02em; margin-bottom:4px;}
+  .node.crit .when{color:var(--danger);}
+  .node .what{font-weight:650; margin-bottom:6px;}
+  .node ul{margin:0; padding-left:18px; color:var(--sub); font-size:14px;}
+  .node li{margin-bottom:4px;}
+  /* ---- checklist ---- */
+  .check{list-style:none; padding:0; margin:0;}
+  .check li{
+    display:flex; gap:12px; align-items:flex-start; padding:11px 14px;
+    border-bottom:1px solid var(--line); cursor:pointer; transition:background .12s;
+  }
+  .check li:hover{background:#fafbfc;}
+  .check li:last-child{border-bottom:none;}
+  .check input{margin-top:4px; width:16px; height:16px; accent-color:var(--accent); cursor:pointer; flex:0 0 auto;}
+  .check .txt{flex:1;}
+  .check .txt b{font-weight:600;}
+  .check .why{display:block; color:var(--sub); font-size:13px; margin-top:2px;}
+  .check li.on .txt b{text-decoration:line-through; color:var(--sub);}
+  /* ---- callout ---- */
+  .callout{border-left:3px solid var(--accent); background:var(--accent-soft); padding:14px 18px; border-radius:0 8px 8px 0; margin:18px 0; font-size:14px;}
+  .callout.warn{border-left-color:var(--warn); background:var(--warn-soft);}
+  .callout.danger{border-left-color:var(--danger); background:var(--danger-soft);}
+  .callout b{font-weight:650;}
+  /* ---- stats ---- */
+  .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:0; border:1px solid var(--line); border-radius:12px; background:var(--card); overflow:hidden;}
+  .stats > div{padding:18px 20px; border-right:1px solid var(--line);}
+  .stats > div:last-child{border-right:none;}
+  .stats .n{font-size:26px; font-weight:700; letter-spacing:-.02em; font-variant-numeric:tabular-nums;}
+  .stats .l{font-size:12px; color:var(--sub); margin-top:2px;}
+  @media(max-width:820px){.stats{grid-template-columns:1fr 1fr;} .stats > div{border-bottom:1px solid var(--line);}}
+  /* ---- footer ---- */
+  footer{border-top:1px solid var(--line); padding-top:26px; font-size:12.5px; color:var(--sub); line-height:1.8;}
+  footer b{color:var(--ink);}
+  .src{font-size:12.5px; color:var(--sub); margin-top:10px;}
+  a{color:var(--accent);}
+  @media print{
+    nav{display:none;} body{background:#fff; font-size:12px;} .wrap{max-width:none; padding:0;}
+    section{page-break-inside:avoid;}
+  }
+</style>
+</head>
+<body data-page-node-id="BEQaNq9He4IMZZzpwLQ8ZJ">
+
+<nav data-page-node-id="WoqcW6FVMmhHkFVfDehvQ1">
+  <div data-page-node-id="ZjT3aG3KrKzNLedmk79ON4" class="inner">
+    <a data-page-node-id="0J90H7e5UXFIPOf9yh9Vey" href="#coord"><!--pnid:mP8rdxss2d7pogfB1ovK0C-->你的坐标</a>
+    <a data-page-node-id="O5izy95SY1yTd2I0XRjxnU" href="#quota"><!--pnid:cwewQEHfnpkpW5MUHg7ycN-->名额真相</a>
+    <a data-page-node-id="qphwNScYBVmie5B2uamPGq" href="#mech"><!--pnid:EnBFKstU8AVUvVTpOw2NGQ-->机制</a>
+    <a data-page-node-id="plstcS5xpeabuffjG5vxdh" href="#cond"><!--pnid:FBj8J2uJ31sLSECaZcIEKB-->条件</a>
+    <a data-page-node-id="t63yd5nxd8nX7hmcON0E5a" href="#axis"><!--pnid:iCIFtLiS5R27sG4S9c60aG-->时间轴</a>
+    <a data-page-node-id="f1cG947p7FnZnutiduwLAx" href="#matrix"><!--pnid:mKMsxrh8L6RIOh4ziTaTWr-->院校矩阵</a>
+    <a data-page-node-id="QQQl70n3oqhAvABNJfgJSU" href="#strategy"><!--pnid:LCeJJGNzbk3ATlJMqpPGlk-->投递策略</a>
+    <a data-page-node-id="GoNtjEH6GTaHxG1hNDxmQm" href="#school"><!--pnid:kfjTKUh2DK1GZYpXdoic82-->本校保底</a>
+    <a data-page-node-id="nEEof17XuPsVgKB6aXMpA9" href="#phd"><!--pnid:GyDRTewZDnReUyf9VHzg1A-->直博与资源</a>
+    <a data-page-node-id="cKddu3AqpL9lfJ2WxUAC7n" href="#now"><!--pnid:FyMDETFDNhdAA4I7AeJ5x2-->本月动作</a>
+    <a data-page-node-id="cIReQRqlXyyzNFPn8sS744" href="#risk"><!--pnid:dCMG67E4vgaFQAU36XJUhd-->风险</a>
+    <a data-page-node-id="5DybE1Sy9x7cLV4CaJdbkx" href="#src"><!--pnid:YAiMEMWW8Jm6T9ITEUII3M-->口径</a>
+  </div>
+</nav>
+
+<div data-page-node-id="CPAddSNLk57LVQt0BPanNg" class="wrap">
+
+<header data-page-node-id="tfawe0JPxRuEYrpzqwDB6j">
+  <div data-page-node-id="I07qnW8Us1xuByafrvk5tN" class="kicker"><!--pnid:A3Hu4yliiVj6MMo9LYKQft-->推免路线图 · 2028 届 · 上海</div>
+  <h1 data-page-node-id="9fJcSomqNHaO6elmG859PJ"><!--pnid:wVHyTbxGR7vW0bzUAxVUnM-->从 SUIBE 人工智能到大四推免：<br data-page-node-id="n5DUIllH7GqWZbyLvKeCie"><!--pnid:6cakWvqGA27K4bA6BkG1PD-->一张可执行的时间表</h1>
+  <p data-page-node-id="s705WpzzIIBFeXmHvz3xVD" class="lede"><!--pnid:CuNuOzXpQRA23n9JlvMDSr-->
+    你现在大三上（2026 年 10 月），距离夏令营开营约 9 个月，距离推免系统关闭约 12 个月。
+    这份文档回答四件事：保研到底要什么、上海 985/211 各自怎么筛人、你每个月该干什么、以及哪些路径对你不成立。
+  </p>
+  <div data-page-node-id="1hf0sRnHk7Cvla7YlZDndk" class="meta">
+    <span data-page-node-id="ib06mjZ6q6qgSU8nWVeu6P"><!--pnid:eCQHF8WkQL4bjGFtibwPoy-->基准：<b data-page-node-id="KCKdXg04RiREuurBtycccG"><!--pnid:Ckg5wyRvlwMrfB6C4ekDd8-->上海对外经贸大学 · 人工智能 · 统计与数据科学学院</b></span>
+    <span data-page-node-id="YLmOsTJzJZC4QzZ2Hgt17g"><!--pnid:A59rCHSFWaMxtgxFuRFYUH-->推免季：<b data-page-node-id="P7a76NLTkCkhQyN3CK3j6r"><!--pnid:QNZMZBrTU0eAjNhp9WtdjP-->2027 年 7–10 月</b></span>
+    <span data-page-node-id="61J1qJZhkvjssyL5s6oOqN"><!--pnid:W9fN2SluNo1r1bCJZEZgey-->政策参照：<b data-page-node-id="Ork4eQveFbZmANy37gvg8s"><!--pnid:LuzQmiMk8S6IHfqc1A03Xy-->2027 年推免（2026 年 9 月执行）</b></span>
+    <span data-page-node-id="LT0hjaAibJojkbkcHq9Cym"><!--pnid:3MBPgkyI5DtAXOmi6beGgz-->已核原件：<b data-page-node-id="NJLzKytxZcvLR9i8NaxlA5"><!--pnid:oFGa3YldWh2FCdlSBENuzg-->学院 2027 年度推免结果公示 + 接收推免细则（2 份 PDF）</b></span>
+  </div>
+</header>
+
+<!--pnid:z6eSvdYOWrVT45yh07d8Ib--><!-- ============ 0. 结论 ============ -->
+<section data-page-node-id="vYn6JRWepzJ1NxLMwcwO9p" id="verdict">
+  <div data-page-node-id="L9o4it8QqNqHeepbLoEVZu" class="verdict">
+    <div data-page-node-id="D4uQGx3m2S3xNwDHMrgtKH">
+      <div data-page-node-id="5dLiMnyBo3btzCOkpjtfdp" class="t"><!--pnid:N6RRICA3zDEu9YubVWKhuq-->最可能落点</div>
+      <div data-page-node-id="jf3kTJ9o9tYzWNys2vznQJ" class="v"><!--pnid:HdUNDVthejQKKCsnHn6Rn2-->上海大学 / 东华 / 华理 / 上财<br data-page-node-id="viEOfsvBMJbvFJqp6plvMo"><span data-page-node-id="NIu6DjELpmsCEU8ISmOycv" style="font-weight:400; color:var(--sub); font-size:13.5px"><!--pnid:0aIksI5Gfm9L0kubyGjNGb-->211 层，双非前 10% 是门票</span></div>
+    </div>
+    <div data-page-node-id="G9yqejqvkHR7SbYaEZcGTE">
+      <div data-page-node-id="txSnLweFHEwqcbtI2edH5Z" class="t"><!--pnid:D2vqgBeMUZ7qE25wDVcqrq-->要冲但概率低</div>
+      <div data-page-node-id="wtEBk8TaxCgjRg36nc0JoJ" class="v"><!--pnid:4L5rLkYPjrPJPJzwoxrbNr-->同济 / 华东师大<br data-page-node-id="DYcpxQSelhFNlrDBURTz26"><span data-page-node-id="Z7I0zugJE9AzQp2FzMxMQj" style="font-weight:400; color:var(--sub); font-size:13.5px"><!--pnid:H28XdTPjlsImAlcPVGxCBB-->985 层，不硬卡双一流，看排名+科研</span></div>
+    </div>
+    <div data-page-node-id="1qFfjTrv36mlLB4y3RDzhe">
+      <div data-page-node-id="baXymSg7Yb1z3iBD0Lr3Vc" class="t"><!--pnid:JF1rO1HPqIYlcqMT45mAOy-->现实上不成立</div>
+      <div data-page-node-id="WnwFd0Lgo1ZP8ua1ImX1VZ" class="v"><!--pnid:zxzhdnYOUrRCEUGgz2tLNN-->复旦 / 交大 计算机AI<br data-page-node-id="j27Sun53ORcHBwCFlKSYBM"><span data-page-node-id="qChQegGjhelHIWu6g09niZ" style="font-weight:400; color:var(--sub); font-size:13.5px"><!--pnid:8JpQgeSVRTRpRy2d8oiN3x-->交大明确限"双一流建设高校及学科"</span></div>
+    </div>
+  </div>
+  <div data-page-node-id="JBdkIhtjPcmYmgbwPptxYD" class="callout" style="margin-top:18px">
+    <b data-page-node-id="yF0zbd6F7DQ3fEK2OZ2Dy3"><!--pnid:nvIA2wJhiVk2MdQlN9ektv-->一句话结论：</b><!--pnid:OfCl7yqTE32wVlVwq8P6gp-->你的胜负手不在"投哪所学校"，而在<b data-page-node-id="ay6eApYI535r9dtqnD9uZL"><!--pnid:R4wn2A1njDRjbUWDkHepQd-->大三下结束时的专业排名</b><!--pnid:HBKjCxtRc8EDBoKX51m4L2-->和<b data-page-node-id="IduM9NmYPtD8c1PHTNv8ZI"><!--pnid:w2DRsr3WzKsYbM0jLGyuCb-->能不能把现有项目转成一篇能被认定的成果</b><!--pnid:dselVxCuqWJJTQyG97v5QP-->。
+    院校背景这一项你改不了，前两项还有 8 个月可以改。
+  </div>
+  <div data-page-node-id="LiwkXJB1hE0KcJCxZVS4pi" class="callout danger" style="margin-top:14px">
+    <b data-page-node-id="7YHdflwwkD6FJfEWiYL3ej"><!--pnid:QyawuQKAUFUYprIsC861As-->但先看一组真实的数：</b><!--pnid:XoDLrdp8IXCUDbQU1ReRBN-->学院 2027 年度公示的正式推免名额是 <b data-page-node-id="DbgXWs8B29mRszrdlfOOCV"><!--pnid:m8k6xyPk1u7U8gOSwsQONL-->36 人</b><!--pnid:8jd9gH6b9K7r1HEWqlloWa-->，其中人工智能专业只分到 <b data-page-node-id="8l8YKKXXGHgtwJnhLfKb7j"><!--pnid:xmV9OvcpqR00AiWJkmAF7t-->7 人</b><!--pnid:qZP7G04gZr6w3I1yR2j52Q-->；
+    按专业规模折算，AI 的推免率约 <b data-page-node-id="OKAH57ACije2NTr3eRS3R3"><!--pnid:pQmjBzFHN3DGEXMnsMEGFb-->7.4%</b><!--pnid:J8JJNf2Rk2Lf1R1PWnd9F8-->，只有应用统计（约 14.7%）的一半。
+    <b data-page-node-id="DiXR3t0THpV1PfQeMawkmJ"><!--pnid:C0ClH5ZYIezSf7bfwiL4Ye-->你真正的入围线不是"学院前 10%"，而是"AI 专业前 7 名"。</b><!--pnid:FDrj8EYQhUVAh5Wh1vxaWW-->详见 02 节。
+  </div>
+</section>
+
+<!--pnid:CIG027qxUEnNyAnU5QZPjh--><!-- ============ 1. 坐标 ============ -->
+<section data-page-node-id="FIqgmzzbBVaxRgV6EohWBd" id="coord">
+  <h2 data-page-node-id="RzAm0Sla9JN17vdQX7Ujea"><span data-page-node-id="i2CMa4ja343aDnnHQ4MIsb" class="num"><!--pnid:Z6sYUPmbXod5OLATrmSuqb-->01</span><!--pnid:zBBLqJpXxwzRsv7YofK5E0-->你的坐标：把自身条件摊开对表</h2>
+  <p data-page-node-id="RhnGYEVAiKPvzvjQ80KDmQ" class="sub"><!--pnid:ZmOg55Fcmhl2INsDGeFJ8G-->先承认哪些是硬约束，才能知道哪些动作有杠杆。</p>
+
+  <div data-page-node-id="oyaJczO9Yv8GRZLI1QELDm" class="grid g2">
+    <div data-page-node-id="uTvu0VkNXJL1fW0a9FDlzl" class="card">
+      <h3 data-page-node-id="pGI1ymlZryUBvUrn4AFNiU" style="margin-top:0"><!--pnid:1zurqMrYbxq8GtnZczOoGO-->优势（可直接换成分的）</h3>
+      <ul data-page-node-id="jYfRoqnPqanvFn4iDnTvce" style="padding-left:18px; margin:0; color:var(--sub); font-size:14px">
+        <li data-page-node-id="aO542sJsD0bI1ExaZTV8Bm"><b data-page-node-id="2zvOD7Lz3C4JxPA54HIvaI" style="color:var(--ink)"><!--pnid:A8XqPt6HKm1Gjl6B7H7Qi0-->专业本身对口。</b><!--pnid:U08zB2RrqOosisQ1ToSkJp-->人工智能在统计与数据科学学院，是全校唯一理工科学院，统计学在学科评估中位列全国前 20%–30%，不是"文科院校里的野鸡工科"。</li>
+        <li data-page-node-id="TXnHpbklczrRsbLpUYHLdf"><b data-page-node-id="weiNdShgimIqTG8B06jMqR" style="color:var(--ink)"><!--pnid:EeSO4noLfSouJhGm0SnK9a-->有真实工程闭环。</b><!--pnid:eNWHyq4vUfq8OHd2UFezJe-->CalmMind AI、飞轮智能体都是能跑起来、有真实用户/数据的系统，面试环节这是硬通货，比"参与过某实验室课题"更抗问。</li>
+        <li data-page-node-id="5RmQ7pcIBMR3QLS1QmeIfm"><b data-page-node-id="I7nBQAVezFj0ApeYPTNFCQ" style="color:var(--ink)"><!--pnid:4u7xfED4qwAHbv0SYOk5Ea-->财经+AI 交叉。</b><!--pnid:qggVxGE4YUpvYoNwChsfvP-->上财信管、上大、华理的交叉方向（金融科技、智能决策、商务数据）与你的背景匹配度高于纯 CS 考生。</li>
+        <li data-page-node-id="sMCGy04ibcxc8rT8KYgXCK"><b data-page-node-id="gT3OfSj5Js5zH03tYXhcUD" style="color:var(--ink)"><!--pnid:9r51R5c4RYTEam1XT8mZUu-->已在数学建模国赛里。</b><!--pnid:m5SZrekt3NCHO9HesTKri2-->2026 年国赛结果通常在 11 月–12 月公布，这是最近一次可能改变简历成色的节点。</li>
+      </ul>
+    </div>
+    <div data-page-node-id="wp7OlOInmjkCCe9xfByf8n" class="card">
+      <h3 data-page-node-id="ngaev7mW2i0FDSqECLpz6j" style="margin-top:0"><!--pnid:JsYz2S0A14dl8mpJttihhy-->劣势（改不了的与能改的）</h3>
+      <ul data-page-node-id="HXyZqCJD472tWLThVFQLnw" style="padding-left:18px; margin:0; color:var(--sub); font-size:14px">
+        <li data-page-node-id="HuKVpOl5wuf9mBAj8JAX5L"><span data-page-node-id="QGEAI2pn8e5jtOaD3RyFnY" class="tag t-red"><!--pnid:1VHb2zDGK4hURIS1digTkJ-->改不了</span> <b data-page-node-id="12d41WbY50mZ5houQHlQ2N" style="color:var(--ink)"><!--pnid:u8Nr6AD0IGVNvHNruaAY1Q-->双非、非双一流。</b><!--pnid:97QADkEtia1Ku3oLTy8LOY-->交大夏令营直接把"双一流建设高校及建设学科"写进准入条件；复旦、交大计算机方向初审阶段就会被扣掉大量分。</li>
+        <li data-page-node-id="RPpr0s6QFNM6Q2m5xbT4f8"><span data-page-node-id="wRVA7uAeNwRdNLb1S2d19c" class="tag t-red"><!--pnid:jjgjxpu40B3k21NAPHu3Gj-->改不了</span> <b data-page-node-id="SgM6FVSy4ex4XfGzIR3JBa" style="color:var(--ink)"><!--pnid:IT1QbBAXC2Mp8S3dpfR83r-->学校无计算机/软件学科积淀。</b><!--pnid:wVREaV4K3O1q4TxSrb0ChL-->同校对手是上大、东华的科班生，专业课体系比你完整。</li>
+        <li data-page-node-id="R4Ypshj3kUHX7Tj1KDs9nq"><span data-page-node-id="6ZP193p3G3xLHkN0M8qYAn" class="tag t-amber"><!--pnid:09Vs6CwrsSNPr4ByNIrLaC-->能改</span> <b data-page-node-id="JMAar996iz7575m2NgpRlG" style="color:var(--ink)"><!--pnid:lBXdGux0dcC5c04f8KsFfb-->论文/竞赛几乎空白。</b><!--pnid:mTnroB2Dp70qk3OM51O0fK-->校内推免的"科研创新"占 20%–30%，只认核心期刊一作与全国赛三等奖以上的主力成员。项目不算分。</li>
+        <li data-page-node-id="viEqZU5N3oTqmPb0v2UAPx"><span data-page-node-id="WkL4PU8qsbm1ZXgOzAZDAL" class="tag t-green"><!--pnid:RGxyL9OxNE2yPaAKiXoSrA-->能改</span> <b data-page-node-id="NYe2cXxRCvCmWOlQcJVtFG" style="color:var(--ink)"><!--pnid:IFctCuQLQwd44p1NDMmvRe-->排名。</b><!--pnid:u6cIKUMFmB0p4EUBvyh6pp-->这是唯一一个纯靠自己就能拉满的指标，也是所有外校的第一道筛子。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div data-page-node-id="GMOtcnpz945DokPnLmLIen" class="callout danger" style="margin-top:18px">
+    <b data-page-node-id="RFtr33cos2RUlyZV1XT5qs"><!--pnid:c4dA3hr34AMTxlLNgpyHnN-->关于"保研率 22%"的传言：</b><!--pnid:CdiU2w3FIaTRVpwsvaGBlI-->网上流传 SUIBE 保研率 22.37%（部分机构文章），这个数字对不上官方名单。
+    2027 年度教务处公示的推免名单约 200 人量级，按当届约 2400 名毕业生估算，<b data-page-node-id="3TOEkhX2SK2CoSlCk4cB1Z"><!--pnid:MS2k1MOfrZ8dUZRdSsPLOt-->实际推免率在 8% 上下</b><!--pnid:Xg3FtNkk94WemHtFpw9NIR-->。
+    看到"22%"，那多半是把"升学率（含考研、出国）"当成了保研率。别拿错误分母规划人生。<br data-page-node-id="xlpbP8PGTdTqMaVFS7MrWi">
+    <b data-page-node-id="FizYb5YZhZyZyplhS0M8bP"><!--pnid:y4gJi0p7GLvIQXNRqZ8qZz-->更准确的做法是看学院的实际数字：</b><!--pnid:JFQ411S6vbT4Vyn7eAhOIs-->统计与数据科学学院 2027 年度正式名额 36 人，
+    这个数字已由学院官网公示原件核实（见 02 节）。推算路径应当是
+    <b data-page-node-id="9EBBFXUZ5tgK3r3vYU3zfZ"><!--pnid:b9Lzh3DDVdtU7RqRASBv43-->7 ÷ 你所在专业实际人数</b><!--pnid:pIu71jIefVrqMX1QI8BZaU-->，而不是任何"全校平均率"。
+  </div>
+</section>
+
+<!--pnid:D0salImI7kclBaL5yWCDgT--><!-- ============ 1.5 名额真相 ============ -->
+<section data-page-node-id="kaEjzaJKdY6NSRjACzRMPp" id="quota">
+  <h2 data-page-node-id="OUi2xnTLkFXGkm6aVgaNrq"><span data-page-node-id="U09vlYMwvMDWNZ1iTJEGH7" class="num"><!--pnid:KJxHrFUhJtlSXPmRVs1jOr-->02</span><!--pnid:QjGuFCegR9hM3OjEM5xPEc-->名额真相：36 个名额怎么分，你争的是哪 7 个</h2>
+  <p data-page-node-id="M0RWg8X8kzs4egm6mgnXgX" class="sub"><!--pnid:2BglqoeJkJJihh7M53DtJa-->
+    数据来源：学院官网《2027 年度推荐免试研究生遴选结果公示》（2026.8.24–8.30），原件 PDF 已保存于本文档同目录。
+    这是目前唯一一份把"名额到底给了谁"写进公开文件的材料，它推翻了两个常见误判。
+  </p>
+
+  <div data-page-node-id="OkKdJPlgUJUFfQ3MIvSmZM" class="stats">
+    <div data-page-node-id="LUeAvHAJWW3jsJDXBPndB8"><div data-page-node-id="R24Jbbn6MDBKYYtB18tmZH" class="n"><!--pnid:dWO9u5b6StvxgI0wFkK7iL-->36</div><div data-page-node-id="LdBB0F5rQUzurxo82oBTqS" class="l"><!--pnid:QQIEoVy5CEiI9uhaqJb2bx-->正式推免名额<br data-page-node-id="waHlxKycrrwRs8D2zdtrJI"><span data-page-node-id="hqPqlepJQsgKuRERubOGM3" style="font-size:11px"><!--pnid:aCFcYL01jE9HyvGNvLuykp-->全院合计</span></div></div>
+    <div data-page-node-id="txwagEh9j9NwUhfoE6Ak0C"><div data-page-node-id="fuJP1e47PgFwutDmK4jgJM" class="n"><!--pnid:XiWYVLHTExY7RAvOtQg5LG-->8</div><div data-page-node-id="7UhQcn7fKD2GacFS0Tfhsh" class="l"><!--pnid:MUe5HcfQRRwIKmXpiPTv80-->候补名额<br data-page-node-id="eYvEFJt5qNnAVXeAmXiwve"><span data-page-node-id="9cyltHGH6UG4MwoLzXBQ07" style="font-size:11px"><!--pnid:2ZjOaeBIlNIl9k629WlZ4r-->第 37–44 名，按序递补</span></div></div>
+    <div data-page-node-id="2H6kDME6Iy4TzOqBlKxMvv"><div data-page-node-id="mA9AhDVMV4Hq4H0dGRXgnA" class="n"><!--pnid:0R8ef6wcHGjPNhFuGlEovt-->7</div><div data-page-node-id="ThGJrlPUBDkzMUJGwKnqiX" class="l"><!--pnid:lHHmzVZ8ZjPYP68sOJO0EQ-->人工智能专业名额<br data-page-node-id="kKel4SUsp4IkHH5kJsfAEA"><span data-page-node-id="uRARHwD7TgSJWfgh3TywNR" style="font-size:11px"><!--pnid:ezYevrN1kqeV3vl7hpyzGz-->无候补</span></div></div>
+    <div data-page-node-id="lFBXb0mkfFtdqdFksidLzk"><div data-page-node-id="5khLuoHQdzcaRcxEeAzbtN" class="n"><!--pnid:Gv1zpjWIAeIYFbGGBKRIzp-->7.4%</div><div data-page-node-id="fywQZhUcBabs7UxRoUEqXx" class="l"><!--pnid:M7EYDVz1PVCKS87snR4qMI-->AI 专业推免率（推算）<br data-page-node-id="CwQ9Adave6FPuxVaPssNS2"><span data-page-node-id="DtmoLn5cqLBmbPUSi9ivKn" style="font-size:11px"><!--pnid:yzHhAeSAfgD5wljRr0BM9n-->应用统计约 14.7%</span></div></div>
+  </div>
+
+  <h3 data-page-node-id="As1d5uxUFgsgmhjUvYNFiU"><!--pnid:BZf6oJTd2twhMp89coHpMy-->名额的专业分布（2027 年度实际结果）</h3>
+  <div data-page-node-id="LihBRiuMgt1mWrBWPkHgrZ" class="tbl-wrap">
+    <table data-page-node-id="axtrhHmwQ6Ydb9ZkaUjp4B">
+      <thead data-page-node-id="kFBGkFyFKclGLloHWXHiNW"><tr data-page-node-id="NOGoki4gzUp0Qyvlmt9TcC"><th data-page-node-id="Uj1GCioOA96MYEIlnsHGlG"><!--pnid:lOBQNYrZWI9Bu21LiJgQwj-->专业</th><th data-page-node-id="ScxAhiccK6V3lPGuvopIFg"><!--pnid:6Aj9S0WTDuM4oJxyxQp14Z-->正式名额</th><th data-page-node-id="EaHcfQGZVlSLBzmtR8UZmz"><!--pnid:PGEUiviIFV8JQBMWQRcahA-->候补</th><th data-page-node-id="7UQVLCYefL6FX9YoWx95hv"><!--pnid:tsLYFIvpDDkFzDSh9qwrxr-->占比</th><th data-page-node-id="lAe5LrYnVp2RLocnmplJ8V"><!--pnid:zW1Lm2Ih8A4m6GHABj1es0-->含义</th></tr></thead>
+      <tbody data-page-node-id="2mJg9A5BGmfFseD7qnEazN">
+        <tr data-page-node-id="WETMVbI0NdM720XceJeDnV"><td data-page-node-id="frFp9W4QKzJRbUZtlKBvGN"><!--pnid:SvRJ47yDSbwDBHXhKtjY5Y-->应用统计学</td><td data-page-node-id="OGVlcGO72VD2PXnF6Yjky8" class="num"><!--pnid:n9OfFCFGT5exGqTJluPGxi-->11</td><td data-page-node-id="KCuN2IgQkveDaL2e10Skkp" class="num"><!--pnid:NZ2q95kGoZ1GaeClhDJOwN-->5</td><td data-page-node-id="Gb57R409VRq1BiLBYBvicf" class="num"><!--pnid:PxUnNpb0JJzUAf88MCQ5WZ-->30.6%</td><td data-page-node-id="VLZtY47b1F42uS8hiUS7sL"><!--pnid:kCT37VrNGcqD5iI52x0DLi-->名额最多，候补池也最厚</td></tr>
+        <tr data-page-node-id="ghibjQqxTFQ9mUNUYtGpzP" class="hl"><td data-page-node-id="0Cq6H5940sr4k2HJS8DhLs"><b data-page-node-id="I4xCdviHy6h624TQcSAcoC"><!--pnid:nGP3PBQjdldEScXnrpRxfL-->人工智能</b></td><td data-page-node-id="rclurJsQhx3VmXa0GDnAoC" class="num"><b data-page-node-id="eNDFvvglLGNooAg2k0KtGV"><!--pnid:xdyADlzBzS8MBzBOx4GhOT-->7</b></td><td data-page-node-id="8OgydRfbBfc7hkihHkvoe0" class="num"><b data-page-node-id="X24NMVrHjOZ8Gn30rXjY2e"><!--pnid:SIoJyq1EEVoh5CJmc3mER8-->0</b></td><td data-page-node-id="h1ZQgxNaV6Nc1FK7CcazIB" class="num"><!--pnid:grjS1ovyTC4D0FrTgLwNnT-->19.4%</td><td data-page-node-id="gWnoMDSWOsB4EUkPZFvf96"><b data-page-node-id="A0oI1uou318G8t0vwWM2V0"><!--pnid:m5qtvQ3WFdAR7miO4YAYOo-->无候补——第 8 名就是出局，没有递补机会</b></td></tr>
+        <tr data-page-node-id="0Au5jSWLDwhS8UUvrba8R4"><td data-page-node-id="DvTFWICy9XkEocRi8TtOIQ"><!--pnid:VRmHPtVZuCaNXiZ0J6V8EA-->数据科学与大数据技术</td><td data-page-node-id="5Ld9U8ZFlsxE6VvdeB8gxc" class="num"><!--pnid:qof9OCseE6p1z2L9ca1EV8-->7</td><td data-page-node-id="zXqSck1cFJCY2Eris4WuLR" class="num"><!--pnid:xbbY9DNLanFKm13spN2zpU-->2</td><td data-page-node-id="ZfmsX2hGMPkhBxUIaOyFGq" class="num"><!--pnid:WXqDtAVtB7v4Apgv3ZEW0C-->19.4%</td><td data-page-node-id="0oGaT3T3t3juAE9LViQov8"><!--pnid:7dbjGtjkz9vrXFpC4ywV6d-->有 2 个候补位</td></tr>
+        <tr data-page-node-id="IqcjPHuDip5PV1T5w8BmV2"><td data-page-node-id="SbQMfl8wv7LXLM6S4n1e7x"><!--pnid:AtpoKI2BwB2op2MjGUX3FP-->经济统计学</td><td data-page-node-id="zvBCm5v3Av9FP1OXsDCa7q" class="num"><!--pnid:nLkAVPyuwAsFXqO2owagoD-->7</td><td data-page-node-id="vZg804ptM7JcJufQBItNSY" class="num"><!--pnid:6RfWLZF20yiKf0tiO83Y64-->1</td><td data-page-node-id="B5nAFFI7hv0mWngGBAMAgO" class="num"><!--pnid:VaRwRJ6CnWwLAlvySueu6X-->19.4%</td><td data-page-node-id="90xOSyHBRjWM4DelW8in9f"><!--pnid:VHd9BwK8r7fZlbRABdgZDI-->有 1 个候补位</td></tr>
+        <tr data-page-node-id="HToUUFEiZyfbjKYS6HiYkh"><td data-page-node-id="gIDC5vcpXmFHwWaDVlohnl"><!--pnid:1XtIf314wDz6cU3A0L6tPP-->信息管理与信息系统</td><td data-page-node-id="Xj4TZExvEbd7hF0kAYuIZH" class="num"><!--pnid:2yORTcE1SEraYasCVLTFcT-->4</td><td data-page-node-id="QZkPpDwGq9rrOmKKJCEvOu" class="num"><!--pnid:1QmcIjlTLlF079YMmmsNwV-->0</td><td data-page-node-id="AUHenlyuISc6ckaFIe25s7" class="num"><!--pnid:P9QDEFR4bpTVmhLCc5Kuyt-->11.1%</td><td data-page-node-id="IgBICiyE9eEi0tFRYaRxGj"><!--pnid:JqaCmmnr967y1p3rBVQv5c-->无候补</td></tr>
+        <tr data-page-node-id="kJMX2002vCE9XCiiImV21t"><td data-page-node-id="tALQFbr5mq7xTxjyzbMCci"><b data-page-node-id="s8kXdgaXJ0r4wrkS0xkw26"><!--pnid:J7aS4bO2vFBzOdPJT4XCRu-->合计</b></td><td data-page-node-id="05E7XYMYrxpzO3eEDx3FET" class="num"><b data-page-node-id="7QujEjxPyMSmwhwFjoltQL"><!--pnid:Z2xIdsXfozu9jsR92aRuHg-->36</b></td><td data-page-node-id="Rc5kBN4bHZunvVr28FN46D" class="num"><b data-page-node-id="DgxhXNyU0EKRvQFLyMcssL"><!--pnid:veSMeC4DHPYyKjCCe9dg1q-->8</b></td><td data-page-node-id="MSyt9dy9cXgBysKNiqlhgi" class="num"><!--pnid:wqhXAuyjrwfYHXYRXA2qMq-->100%</td><td data-page-node-id="9vmvX1C4px2hB19t8JSDNV"><!--pnid:DG2ynPuo6kb4LobFYS0JjZ-->候补顺位为全院第 37–44 名</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 data-page-node-id="Nv2icgdbXZS54nNBEqUHpV"><!--pnid:l6DnstpLibet0sDZbAGpXw-->把名额除以人数，才是你的真实概率</h3>
+  <p data-page-node-id="5tF0GVjoaOtzhE6P9tNMIv" class="sub" style="margin-bottom:14px"><!--pnid:IW55kbRgREaPdBuCCx9D5f-->
+    "规模"一列取上海招生计划口径（应用统计 75、数据科学 81、人工智能 94），用于横向比较相对难度，
+    <b data-page-node-id="bOr6LKaM8V2i696oECEAO4"><!--pnid:kbUoXa6fazBzuyVcaPmhBF-->不是你们这一届的实际在册人数</b><!--pnid:97TebYjtqyTFOlmESXOkgJ-->。你需要在 11 月前问到真实人数，把最后一列自己重算一遍。
+  </p>
+  <div data-page-node-id="LEgD73L3AkPd0rm7C64OGS" class="tbl-wrap">
+    <table data-page-node-id="FYUtlUpMvLbvjrJAEDbkkY">
+      <thead data-page-node-id="U9mVRDXekc5iJlAheqBkZJ"><tr data-page-node-id="LdGs1ZBXgF8oranQeni2sk"><th data-page-node-id="AFRxNVlUYJWkbxpeutEmmw"><!--pnid:j6l6CPcGP4EamaWpBOExqq-->专业</th><th data-page-node-id="6Q94BpAPxsxmNc49E5qFBx"><!--pnid:DSL4OGolL5xBxZrYA9NJfN-->名额</th><th data-page-node-id="7QTbm1EBmoX35XZ9NL7eQI"><!--pnid:ls89VdlSY7Id6crt0USYdN-->招生规模（上海计划）</th><th data-page-node-id="0ZdZ6oHng7oDhfw9qc3yQL"><!--pnid:ScmWfgHNvRrXminCO3JmOt-->推算推免率</th><th data-page-node-id="HXguG0iwBiDLFlT1Ac0P3X"><!--pnid:HogdB1vSkknUbp9IJ5n1My-->换算成"要进前几名"</th></tr></thead>
+      <tbody data-page-node-id="DLjxo0ZGqX0AgsFqsLiwBr">
+        <tr data-page-node-id="ioQU53IOKVRSU3Ye4fuI1U"><td data-page-node-id="IVpBG7cFSLokCR2H69CJyB"><!--pnid:zPB7xOK10ekxyC75XLvNQa-->应用统计学</td><td data-page-node-id="iAxQiv0AGtYvr151zhYazE" class="num"><!--pnid:qvVC8d1alR3NwMKa0Qthu3-->11</td><td data-page-node-id="W5Rt9EJom29mB2SjZBvUwL" class="num"><!--pnid:OvUvmWTMuYZNqBsaVv6tOj-->75</td><td data-page-node-id="RE3ZIadd2tqgjovLLWtm4d" class="num"><!--pnid:BcMvOTJAyqbUFb0ZWtOmK7-->约 14.7%</td><td data-page-node-id="fSWvT3gzmptj2E6bKkr9iN"><!--pnid:ssQeDQu5TeuOLjaQeHOoLF-->专业前 11 名</td></tr>
+        <tr data-page-node-id="lMXOWXKv23epQCYeLFrvSM"><td data-page-node-id="YmA03YyqAqFg7L1AXjn9mz"><!--pnid:3XnAJcJS3xAtjBjVaYfv1x-->数据科学与大数据技术</td><td data-page-node-id="dPwmbeons8gRcYQ68Qv186" class="num"><!--pnid:k0WyFu2AdRCAQbc2QEXE0v-->7</td><td data-page-node-id="JKE8rS05KL6dZKZwgWlJCW" class="num"><!--pnid:M9RmYgOyHbMZYPQqQIIXJv-->81</td><td data-page-node-id="qF9PTkwSkSQrxmGcnTzhWg" class="num"><!--pnid:rf1HuShZbHfOEksdh7eNq5-->约 8.6%</td><td data-page-node-id="Kp6eALmax8mBi5lp2Z6Jez"><!--pnid:LWLGt93ZBRsrwUoDrNYSH4-->专业前 7 名</td></tr>
+        <tr data-page-node-id="JpE5eY5kmhqHLigC3sXCgI" class="hl"><td data-page-node-id="WamatpkiaqIWDAAinSxJLR"><b data-page-node-id="oVDpM8eDss1xALd9nanFKX"><!--pnid:lvS75fpT3ClSQu4SZfPMff-->人工智能</b></td><td data-page-node-id="gEEEgsWzMaKWsyMoKpbyiy" class="num"><!--pnid:xEtiwERNY8mNcJSEMjKIKU-->7</td><td data-page-node-id="6VaSsTVqCRUeCJhVt1k4j1" class="num"><!--pnid:fLl8663CZybL4cijX5o2oc-->94</td><td data-page-node-id="mI8jXOgF5qMyHGJChLHaUv" class="num"><b data-page-node-id="sR5rj0RSAzteJ7G6hDVop0"><!--pnid:dgnx1oxS3lCpY7EtHzv7uC-->约 7.4%</b></td><td data-page-node-id="Sbi7GdzDP0xxVI2v4R38UC"><b data-page-node-id="DuRT3tVcCWlm7kOHEPKMBR"><!--pnid:WdkqfRKagTT4rGzzTNUUme-->专业前 7 名，且无候补</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-page-node-id="aoL9RhYXf9pZHeHEUaww7u" class="callout danger" style="margin-top:16px">
+    <b data-page-node-id="6aX1aUgMkmRkZ7A0QNWcn1"><!--pnid:00J3CtlTI4lBedzIGX8XlS-->结论一：人工智能在学院内部的竞争中处于结构性劣势。</b><!--pnid:RghWgJTA89LeeHEDBmr4ad-->
+    名额占比 19.4%，但人数占比约 30%——推免率只有应用统计的一半。
+    更直接的证据在名单里：<b data-page-node-id="h3D39nIECIDxSDs2RQvEdX"><!--pnid:6eXebI4Lp1tqPKQSzTaexq-->全院前 5 名中没有人工智能专业的学生，AI 专业最高排第 6</b><!--pnid:JPyQJNUhAZaAXVH4oWZYji-->。
+    原因是 AI 培养方案课业更重，且与统计类专业放在同一套学业成绩口径下排序。
+    这意味着：<b data-page-node-id="XGvwB5XUgTpCswHlZLtHjL"><!--pnid:qxlC5Vx634gJDMIcbEFIYo-->你不能用"学院前 10%"这个模糊标准要求自己，你要盯的是"AI 专业前 7"。</b>
+  </div>
+
+  <div data-page-node-id="XNbZTxprt6Ur3c8Q1CqZiv" class="callout warn" style="margin-top:14px">
+    <b data-page-node-id="16Zx20h5AHztxjTMwqnE1Q"><!--pnid:eMvfLmFPxQJmzy0q8VafNa-->结论二：候补位不是缓冲垫。</b><!--pnid:w3C2IEuOiiXltGJvkkweXL-->应用统计 11 个正式名额配 5 个候补，人工智能 7 个名额配 <b data-page-node-id="qWEysTt1Wcg1j93wDD4IXo"><!--pnid:4hU4iF6fka8QVWv46Kgz7c-->0 个候补</b><!--pnid:4xQh2EdoqNhedoVZoZWigk-->。
+    别人拿到外校 offer 后放弃、名额回流时，AI 专业没有顺位可捡。<b data-page-node-id="AlLZIP9lK3Ak6UHoO254NW"><!--pnid:Uv5B5w50M1RHhiqbyVe82U-->第 8 名等于落榜，不存在"再等等"。</b>
+  </div>
+
+  <div data-page-node-id="bxwjEmMZk7v6Tsc4bZNuIt" class="callout" style="margin-top:14px">
+    <b data-page-node-id="iYyp0dDMNPH8V2aoy0lpPF"><!--pnid:i84woD1b1mYie9M9EFG5F2-->结论三（对前面判断的修正）：</b><!--pnid:uLJGG4mdlx41MItApzqOaz-->此前文中提到"统计学院只占 1 人"，说的是
+    <b data-page-node-id="NUQRydzJzNx2sZim2mjOdS"><!--pnid:ITJxrqi1Mo5vMcCay0sOBc-->接收端</b><!--pnid:rHwR6qdaSMDsjY5cFdcuTY-->——本校研究生院招收推免生时给统计学院的分额（2027 年全校 32 人，统计学院 1 人）。
+    而 <b data-page-node-id="K7CL3sezHmE9PZpbg96h42"><!--pnid:5QKOpEVFwCJHxAsnnswurq-->36 人</b><!--pnid:HeNoXy8YDERUwlzK3ZYHgp-->是<b data-page-node-id="DAR9sXWjqdlaJcjoiyokOO"><!--pnid:UIwMqmgzuRBSQiKKhQXsVw-->推荐端</b><!--pnid:AHVGDWr7ZtEQqdpLNC9Tns-->——学院向外推荐推免资格的额度。两者是完全不同的流程，不要混用。
+    你拿不拿得到资格，只看 36 和 7。
+  </div>
+</section>
+
+<!--pnid:VQWBLkPC2bebmWlIpDih4D--><!-- ============ 2. 机制 ============ -->
+<section data-page-node-id="t8JYvmQC0x3On6HXfiqX9P" id="mech">
+  <h2 data-page-node-id="23juFbk0gu4tThLaRUreEX"><span data-page-node-id="2IJIuZtDqy50m6Z5OpTk6s" class="num"><!--pnid:VY2gCTLFI2OY2OY0zxpsA6-->03</span><!--pnid:hJcPyo0nkigyK9It7veW61-->机制：保研是两张票，缺一张全废</h2>
+  <p data-page-node-id="XnYdL6Zn1SirWqVrLYQdAV" class="sub"><!--pnid:dhpuqKW7Ndvk2usj4hGuvW-->绝大多数人栽在这一步——以为拿了夏令营优秀营员就上岸了。</p>
+
+  <div data-page-node-id="x9lbn9PuaQdyPmk0sqWU9B" class="grid g2">
+    <div data-page-node-id="aSIuilVr3MzyhZWNMrVh1u" class="card" style="border-left:3px solid var(--danger)">
+      <div data-page-node-id="tBaTEAZCO6XbXIoAAxPBPV" class="t-blue tag"><!--pnid:TptF51BdTzzZf7MWXelBAK-->票 1 · 本校推免资格</div>
+      <h3 data-page-node-id="3KWmVCtUT2EarYtQyT2vx2" style="margin:10px 0 8px"><!--pnid:tp3Rh5KWqSkcAfEUTH2KfK-->学校给你"可以免试"的许可</h3>
+      <p data-page-node-id="DYEJ4IYRqiQr2Dt5yqZqXR" style="color:var(--sub); font-size:14px; margin-bottom:10px"><!--pnid:XVBYiDipmJkWdYEfgLjGaF-->
+        由 SUIBE 教务处下达名额、学院按综合成绩排名遴选。这是<b data-page-node-id="KUc5UxKMYbnwl2ouSismCp"><!--pnid:LvSftweUyFTyLlSLpwRWnW-->唯一</b><!--pnid:KVmRXhcOTw8qm8IDXMsujd-->合法出口，
+        没有这张票，所有外校 offer 自动作废、且不可补救。
+      </p>
+      <p data-page-node-id="yJNzxTFC6kjgCtn4plx5PT" style="color:var(--sub); font-size:14px; margin:0">
+        <b data-page-node-id="8GqjhYI6KJSMyjr1L92tKV"><!--pnid:gLrLwNmwU02KoTpDeYAvA1-->时间：</b><!--pnid:GX01fTsSlkHBgTwOUx3kz2-->每年 8 月中旬学院申报 → 8 月下旬答辩公示 → 9 月上中旬校级公示。
+        名额按学院分配，具体到专业。<br data-page-node-id="P6QHRVO1ZLpPRco3X1Pj70">
+        <b data-page-node-id="P54mgmhiIiBS5JkE45FTcy"><!--pnid:RbOO1RHfFW6ADC3AcYhckh-->2027 年度实际：</b><!--pnid:EUbuPMRRYtg23ve2toesot-->全院 <b data-page-node-id="62vs2idUR6h1qJ4o4lVmTH" style="color:var(--ink)"><!--pnid:0sH5HUC5SYoghHIcuHeANl-->36 人 + 候补 8 人</b><!--pnid:cjpmGDUZ5HeC0L5XKY380b-->，人工智能 <b data-page-node-id="I9PfKP1nMsVU3Ml5EmWcu2" style="color:var(--danger)"><!--pnid:XqF8lm4C8SAy1kgSr3UOpx-->7 人、无候补</b><!--pnid:PPDmQIsoLG1rsHz74BJRWq-->。
+      </p>
+    </div>
+    <div data-page-node-id="MyUE3eTK5WIpOmruWnJJMx" class="card" style="border-left:3px solid var(--accent)">
+      <div data-page-node-id="0PjckcTsW7yR0lVpqQTvGE" class="t-blue tag"><!--pnid:xPiYkzT6gpPlAJXWfBifd1-->票 2 · 外校接收</div>
+      <h3 data-page-node-id="bZgM4NoF08DME0C5z85yrO" style="margin:10px 0 8px"><!--pnid:Vi78uykxGy3iS7PUk6vooc-->目标院校愿意收你</h3>
+      <p data-page-node-id="YCbW4UMzz235wLWzm6qHdc" style="color:var(--sub); font-size:14px; margin-bottom:10px"><!--pnid:dUqthibbuTazvKyC7ow8Fm-->
+        三条通道：<b data-page-node-id="AwLUxj8yYRqrSZbw9nzvYT"><!--pnid:1qcnOi8IzfdIUOG8LIla5d-->夏令营</b><!--pnid:DTW26RVawgjyHdglHAxwLh-->（3–6 月申请、7–8 月考核，名额最多）→
+        <b data-page-node-id="yl9lSgd4hKHbiSA8a2kAgW"><!--pnid:WEYMBCCC9Uwk5wgqK3IKPC-->预推免</b><!--pnid:KnRuURawMx6trrYE0nwLQf-->（8–9 月，夏令营没招满的补录，双非的主战场）→
+        <b data-page-node-id="pjRPVq8Qlk3LLkxKVfEJgj"><!--pnid:nmsWr28H3egqU1b7pR3cUl-->九推</b><!--pnid:ww5ThVkt3iaqNqnmLHSLx7-->（9 月 21 日系统开放后的捡漏）。
+      </p>
+      <p data-page-node-id="JMv2TOXX6Rn3YgMzfStWF3" style="color:var(--sub); font-size:14px; margin:0">
+        <b data-page-node-id="7CYa4PSnGOqA4hdRBjGjZy"><!--pnid:L02HK9dCgmD3BnI3oOP0CC-->关键：</b><!--pnid:wnasAMEY4cKwwI2xdVjuRN-->夏令营发的是"优秀营员"，不是录取。它只在<b data-page-node-id="ZCnlp8jReLgTmzOQTIxEaS"><!--pnid:y9tit2obzX4K9YeDzvhKlb-->你拿到本校资格之后</b><!--pnid:MT0A4s4LqqScSUOgAhEvx9-->才生效。
+      </p>
+    </div>
+  </div>
+
+  <div data-page-node-id="x7UUfJzeo3XIlO1hTU5m1J" class="callout warn" style="margin-top:18px">
+    <b data-page-node-id="vubtDeDms0W6AjZCWC69tu"><!--pnid:kMUCbgfMOJP7ZbjfOBODfZ-->时序陷阱：</b><!--pnid:O5CTU51GfCwWqpowUeVJIM-->夏令营（7 月）要你承诺"预计能获得推免资格"，但你学院的遴选结果要到
+    8 月下旬才出。所以 6 月底考完第 6 学期，你必须立刻自己估出排名——估错了，7 月拿的营员全是废纸。
+  </div>
+
+  <h3 data-page-node-id="QZTaOingHnL4gVg2o4c1n3"><!--pnid:C4PtpUktBn9PTLVKsjNrFr-->校内那道门怎么算分</h3>
+  <p data-page-node-id="kEogEvYuUYIZQ8ckRQSmNo" class="sub" style="margin-bottom:14px"><!--pnid:YAB7AnSS4k8vTOr6oG3Fuk-->校级办法（沪经贸大办〔2025〕132 号）给框架，具体权重由各学院细则定。已公开的四个学院权重如下——注意<b data-page-node-id="e31slslh2n4PXN9gDB0ogl"><!--pnid:gquAmvImsO4ZePpRZEewiu-->学业占比 50%–70%、科研创新 10%–30%</b><!--pnid:PQMBLOOycE94cHC0k1AIrB-->，剩下的才是思想品德与"全面发展"。</p>
+
+  <div data-page-node-id="uxBOcuedQ5BvIpLCS3Ed1o" class="tbl-wrap">
+    <table data-page-node-id="jhlIke0wSrthJs9xsDULLH">
+      <thead data-page-node-id="J6DuK4WmVH3qPV5ZZfdIcw"><tr data-page-node-id="ytcbAkvkyanVfeqEPbLQMr"><th data-page-node-id="1eQW0d6WBVCdcOoMl5J8Av"><!--pnid:6hTWYnwaF6yHXug5gqWql0-->学院（年度）</th><th data-page-node-id="VTYcibdQ03SdmM2wa5Nfru"><!--pnid:zKBNocYW5RaClCKcdm4uyS-->思想品德</th><th data-page-node-id="cT07htS9Vmq914tUY0urBe"><!--pnid:guxjLZI1cV1e1tf97zgwuI-->学业成绩</th><th data-page-node-id="Mw5exJVn1iiEBbkv4KxzzR"><!--pnid:QHRyfS0KqMXABdhfsHI2X2-->科研创新</th><th data-page-node-id="TGqYOtXG3nX9kHQJ5DN3yx"><!--pnid:1TPCHE3TfXnL1CEVyP3hNj-->全面发展</th></tr></thead>
+      <tbody data-page-node-id="82I7DlEdJrOje86DyqSaaQ">
+        <tr data-page-node-id="yM3Cv4IgQP86S5SLucmf1f"><td data-page-node-id="il055EGjFkpPIYgZCl6ZcV"><!--pnid:jYZYfamTie4lL2xoWgtnCe-->会展与传播学院（2027）</td><td data-page-node-id="OAF5DRSJsVk5XIr6fdTt4d" class="num"><!--pnid:CZOTlnOYxqVqAID0MH477b-->10%</td><td data-page-node-id="oQ3XhEENEwhcjzrO8kc0rM" class="num"><!--pnid:R4qoVjjh8lOsd4zBkDf56F-->50%</td><td data-page-node-id="WH1xWOf1AvJHvAWAvvvDi4" class="num"><!--pnid:sDM6eCp5bRHyBJmsOc5c1D-->30%</td><td data-page-node-id="yD6ENdSDtBhoQYiyIAK33l" class="num"><!--pnid:Ek2fv1PmiYLEGDCWjuGglf-->10%</td></tr>
+        <tr data-page-node-id="prwfBH7PYkmZ84qcOl5fLD"><td data-page-node-id="9HRlhUtZlEBs1qHN6sTwVR"><!--pnid:3Eja5gK8D2Iuc3jc56u5r1-->国际经贸学院（2025）</td><td data-page-node-id="77j9HQHusThnhn4qDPMa7o" class="num"><!--pnid:J0i8f7m48a5LpeblkTT2rp-->10%</td><td data-page-node-id="7eLe3l0e0JMPZzlVfneevE" class="num"><!--pnid:zWt3AljS1KOlZ7g7j9f3IW-->60%</td><td data-page-node-id="8egXbjf32N7gAAIO4apm5w" class="num"><!--pnid:hDmZ9Miwrn5S7xXQUZ8hG3-->20%</td><td data-page-node-id="vpeqfu1KVoRjxWJzn79kFt" class="num"><!--pnid:b0Oqhf4HfmgeZ8JNgBjedH-->10%</td></tr>
+        <tr data-page-node-id="uJzy180LcA3GISmbz563G1"><td data-page-node-id="hnKxgM6Uk9oZOeIGM6WV3W"><!--pnid:3dvSgQuhCC24IPQhbf66LA-->工商管理学院（2022）</td><td data-page-node-id="JN84GoK3CUvDHsXobkhjYW" class="num"><!--pnid:j5nHB8OIe1xsV6g0lJtZ0p-->10%</td><td data-page-node-id="xOVfEHmjytVpDTRwgCFJbL" class="num"><!--pnid:KG4JMuX6cbP3UJA9Sz6DKl-->60%</td><td data-page-node-id="D9URSGKkccjKs1e4n0DQGu" class="num"><!--pnid:zb49cE3dPy2iyaqN6LASw8-->20%</td><td data-page-node-id="fB1QcfgB8hlqYbpCmwaxhz" class="num"><!--pnid:AhlENWcphqhJ1HM1CsQr2A-->10%</td></tr>
+        <tr data-page-node-id="3kQiXJdavdFiiV4SLu1ROo" class="hl"><td data-page-node-id="8LXsmQAfr5njJ38VuBrENe"><!--pnid:IQPT6NFYp3wIR1UDLEWzok-->会计学院（2025）</td><td data-page-node-id="kwgmR5KUFDRbFGvMoK3KsG" class="num"><!--pnid:FFof2IFDEemNHBJPq80ejK-->10%</td><td data-page-node-id="XmQPD1xINgvboXoSfpv5fj" class="num"><!--pnid:VlEsCf134NXQU85F5fxsUZ-->70%<br data-page-node-id="iPEaEfMyWuOAzM6bpGZUsd"><span data-page-node-id="rQfBFeH7fpkMCDkA1Jjgm7" style="font-size:11.5px; color:var(--sub)"><!--pnid:6MjsaOgs9hB8uMyfXGkjww-->均分30%+排名40%</span></td><td data-page-node-id="ob6IN1dXx9YJNMbDG2SKoQ" class="num"><!--pnid:VPSR5Rx5VOed9bfD3zm3Qv-->10%</td><td data-page-node-id="JmU5mWyMvXnlc8byhO8Lfy" class="num"><!--pnid:lf8eKDkpbWmt1FBQhWY16r-->10%</td></tr>
+        <tr data-page-node-id="IGVNXbpCUYXpc0Wpr3mvtp"><td data-page-node-id="tlWYHuRfSMe3a0dyPnsdLg"><b data-page-node-id="UXqz1sNols2LukOe5UqCht"><!--pnid:OGGpaQHnyb3ceNBaHjIhv1-->统计与数据科学学院（待确认）</b></td><td data-page-node-id="DA1KL7BDDFR1U7PKsSr4kS" colspan="4" style="color:var(--warn)"><!--pnid:ubi2CGL7psJkC0Tv1IBSot-->该院细则未公开检索到。按校级办法与同校惯例推断落在 50%–70% 区间，<b data-page-node-id="pFoC89xQSt8dQQB1x9Huv2"><!--pnid:UUS2kHBNewJuQNN5Hz1YoP-->必须向辅导员/教学秘书索取原文</b><!--pnid:X76F9jHrHSwxAXLcqJKseF-->——这决定你后面 8 个月把时间押在绩点还是竞赛上。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-page-node-id="Qsuigvrk1uebOW5Z7t9EnV" class="callout" style="margin-top:16px">
+    <b data-page-node-id="Ul3CxsPlS5Fvl100hEfECs"><!--pnid:GNIGiWkFDAyPaiehPoS78o-->科研创新这 20%–30% 只认三样东西：</b><!--pnid:anuWR9E1vxw5u7RMNwrWVp-->① 核心期刊一作（按学校《优秀学术期刊目录》认定，且第一署名单位必须是 SUIBE）；
+    ② 全国性权威竞赛三等奖以上的独立参赛或主力成员（按《学生竞赛奖项项目清单》分级，数学建模国赛在列）；
+    ③ 已通过学院专家答辩的特殊学术专长认定。<br data-page-node-id="LDIk2X3eic0fNcQRVcbhoW">
+    <b data-page-node-id="gnqa8i3mJ1zh9i97CAVWD6"><!--pnid:BC2yKiZjfNruvc8n95HDHc-->你的 CalmMind、飞轮智能体，在这张表里是 0 分。</b><!--pnid:RPcpA59kDlidnPPEKpCVdJ-->它们只对"票 2"有用。这是你必须现在就想清楚的分工。
+  </div>
+</section>
+
+<!--pnid:jAQqtgRDPoGoPFEco8uslw--><!-- ============ 3. 条件 ============ -->
+<section data-page-node-id="s0E93Vf42p4YLkrtSxVZY1" id="cond">
+  <h2 data-page-node-id="3v9ewCtaaT7xx4LznnhVcr"><span data-page-node-id="avDkXgIbun89O7naZP4J3U" class="num"><!--pnid:QqobqQ0WVVwb8JymbvwEeV-->04</span><!--pnid:G6hvtWSVkFvEjVoa2f9ieH-->条件清单：哪些是硬门槛，哪些是加分</h2>
+  <p data-page-node-id="bq1Di9PXAj4PIZtk0E9hRU" class="sub"><!--pnid:FeyPJlAjqQcjpJYDqPH9tA-->打勾即为已确认完成，状态存在本机浏览器里。</p>
+
+  <div data-page-node-id="CwcTh6OQ1VLW51ePDp8mV0" class="grid g2">
+    <div data-page-node-id="nmcinu5kk1oqT4enSOjIkQ" class="card" style="padding:0">
+      <div data-page-node-id="KobYtFPdTyeekYVI2TiHbx" style="padding:18px 20px 6px; border-bottom:1px solid var(--line)">
+        <h3 data-page-node-id="IiyvnpkM7UAPky7bEEbPje" style="margin:0"><!--pnid:hORRcF7mPZCoiyZNGZDdv5-->A · 本校资格（硬门槛，缺一票否决）</h3>
+      </div>
+      <ul data-page-node-id="r84LnEgpTrVYkmHpzTdHSJ" class="check" id="ckA">
+        <li data-page-node-id="02y6QdQGZ9yXxTp0h1q84P"><input data-page-node-id="67csijsL8OkzldtxHsZZAm" type="checkbox"><span data-page-node-id="mNCcoB1oLLg2ArSKRnrlgp" class="txt"><b data-page-node-id="rT7YdYrP06XVUiEBLGIUnE"><!--pnid:nUUO0Yvt4iU9lStnWkFFi5-->前三学年必修课无补考、无不及格记录</b><span data-page-node-id="V3TyIgUKqjTj9eBp5gtnfl" class="why"><!--pnid:OY9B073ML2NjmNCpvhxwyJ-->校级办法明文。挂过一次，推免资格直接没了——这是最容易被忽视的一票否决。</span></span></li>
+        <li data-page-node-id="mIxsaRkeSawT8rKqVWXmL2"><input data-page-node-id="75zSQnRCiTAn5zOPlbSnyl" type="checkbox"><span data-page-node-id="BXSZtQXHfE2bNhivwL7MOd" class="txt"><b data-page-node-id="ZcGJ8zUDSTivffgMkir8oG"><!--pnid:RZLRWF65oW7Z3QZ746w6Tq-->六级 ≥ 426 分</b><span data-page-node-id="2MF4yBfzGBi9qstwjagGFu" class="why"><!--pnid:8UbIJYOgPRnHkC61D4J4yd-->SUIBE 校级硬线，2027 年各学院细则统一要求。不是 425，是 426。</span></span></li>
+        <li data-page-node-id="r16K81fCfApTIoAqSW3S4d"><input data-page-node-id="zHYdhW7qva5UIG20D0MlfZ" type="checkbox"><span data-page-node-id="qVFiWZcFSfBJbc7Ek8XB3B" class="txt"><b data-page-node-id="F7KjfFnM2TUUbu0nZEamQg"><!--pnid:L7cJkmmdIYrAiys7PRXreU-->前三年平均绩点 ≥ 3.30，或专业排名前 15%</b><span data-page-node-id="c8bMk3ygrhPyrtfAqZs2Pk" class="why"><!--pnid:fJFqnF2tfO9DHoAY8KIszb-->两者满足其一（会展、会计学院口径一致）。3.30 是底线不是目标，外校筛选看的是排名不是绩点绝对值。</span></span></li>
+        <li data-page-node-id="BxrAwsSRTfkk3GybGpYPER"><input data-page-node-id="YahTeg4el4fgj6zCALRx3s" type="checkbox"><span data-page-node-id="oESjAZgtabDOhWMJA5MgZ0" class="txt"><b data-page-node-id="czEmpopyfLBEsGGwCVEUpA"><!--pnid:gn52oWuUocH9ULQwJWAkro-->无任何考试违纪、学术不端、纪律处分</b><span data-page-node-id="LcffQ9REEPBt579Fhbng3V" class="why"><!--pnid:bSnRY72EMdYYpTkjHcGP0m-->包括论文抄袭、材料造假，一票否决并通报。</span></span></li>
+        <li data-page-node-id="CYwGMCDeFIjnZdydmjpRke"><input data-page-node-id="e21B7VotKg4uNKBaE6UAPV" type="checkbox"><span data-page-node-id="VqegZ1eWUAoVcNni0VRXlc" class="txt"><b data-page-node-id="hIkduEGlzxusROchchDYId"><!--pnid:OAfsdhvIYyIIJeovFOYmZL-->未办理出国手续</b><span data-page-node-id="4RtOPnkzKZwC6ddDtX1CWM" class="why"><!--pnid:h63eWZTyX8rpORgSYj0iNF-->细则明确"准备或正在办理出国手续的学生除外"。如果你同时在申海外，要注意这条会直接取消资格。</span></span></li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="KzlaKZ3pYT6ILN7YSGxeWH" class="card" style="padding:0">
+      <div data-page-node-id="pZAX5ppu4w35KK57SVKvL3" style="padding:18px 20px 6px; border-bottom:1px solid var(--line)">
+        <h3 data-page-node-id="s0R7ZMEqWWBoi6WahiE52J" style="margin:0"><!--pnid:6FE3MCRgSsbpE0vtTfyD7l-->B · 外校准入（按目标分层，逐级加码）</h3>
+      </div>
+      <ul data-page-node-id="Qd8kQuub0256h4oMtS2EZW" class="check" id="ckB">
+        <li data-page-node-id="vPvrokIv9ad2P6tVRflKmx"><input data-page-node-id="c7WBF5GRz22MZXkzR9EHTp" type="checkbox"><span data-page-node-id="Xjjqqip9QBF0sDIw7hQDnv" class="txt"><b data-page-node-id="pzmem6tpwSkVWJEm3KWoHA"><!--pnid:VIYoZQKKox0D79vUyaPDoQ-->前 5 学期专业排名证明（盖章）</b><span data-page-node-id="FJ6lg6fPmL957s7Hl1uxd4" class="why"><!--pnid:yoObI3JDcyTZBvIAcwO5HE-->夏令营阶段用。几乎所有学校都要，且必须盖教务处或学院公章，临时开不出来。</span></span></li>
+        <li data-page-node-id="g6nQfO2pwCVB5QoGwB0FKj"><input data-page-node-id="auWMEo7j5XS6tWJnmsSKsi" type="checkbox"><span data-page-node-id="ECSapFbHiGVbqb4FffP6jR" class="txt"><b data-page-node-id="8V4j3X652HE2EmNUjqKEHk"><!--pnid:6ET3DgjLU1ioXaHESKSonB-->前 6 学期成绩单与排名证明（盖章）</b><span data-page-node-id="h2cDlc7ldp2iG0ibvPdZpg" class="why"><!--pnid:6FYGCEMxCSGRYm5IkUjelW-->预推免阶段用（如上财 8 月 20 日截止那批）。第 6 学期考完才能开。</span></span></li>
+        <li data-page-node-id="AHMrT4VP0jaHp2gSiIlwfJ"><input data-page-node-id="TqCwKvK0mweClMfQuLt7Fb" type="checkbox"><span data-page-node-id="zvp1fgHndVxn4NEx5JGaqg" class="txt"><b data-page-node-id="cqEt7mp35LBVfdbVEvXWHM"><!--pnid:ZdeJaRkP7SKB3Xc9mSJZrz-->六级 500+ 或雅思 6.5 / 托福 90+</b><span data-page-node-id="WVN4aF57Zo8d6hwE1yNJFX" class="why"><!--pnid:bVt3Jfn9GyCBIzX3WmfmwF-->426 是门票，500 是竞争力线。复旦经管/计算机方向六级隐性门槛在 550 以上。</span></span></li>
+        <li data-page-node-id="Lo3czD4tDEzzSi74TCvqV2"><input data-page-node-id="8c3UNur70vMIzKSgzkRvNv" type="checkbox"><span data-page-node-id="CrNBojYDjOupysQr8SxC3G" class="txt"><b data-page-node-id="6z9raBE5gRYN8Ib9T5fHyG"><!--pnid:tEBw39sOs8xk1mT335rYbV-->两封副教授及以上推荐信</b><span data-page-node-id="4PHnpCDbNDZ1SeWN0PjmEm" class="why"><!--pnid:Brb8XTZDxSfDWOCxh3TGYI-->上财、复旦、华师大明确要求 2 封。要提前 2 个月跟老师打招呼，不能临时抓人。</span></span></li>
+        <li data-page-node-id="QuN0oYKHTBisSmMNsSMgNm"><input data-page-node-id="wZa8Z2EHYx3gBo87F0woCh" type="checkbox"><span data-page-node-id="N4Zse0VLo3a0dgkkRcTAzr" class="txt"><b data-page-node-id="RG4hAuxevpZMa5Q9TNf6GW"><!--pnid:vZLnYHyCcwuUMn5a5LPiLI-->个人陈述（1000–2000 字，中英双版）</b><span data-page-node-id="O2e2bKFR9wIlXGSmuPfogI" class="why"><!--pnid:K0PGwHz8AxZo1do0bvDUcr-->不是简历复述。要写清：为什么这个方向、你做过什么能证明、读研想解决什么问题。</span></span></li>
+        <li data-page-node-id="8Y5ENHlQhwB2JGgQkpyyaS"><input data-page-node-id="TMmiPDdwiqAfXOwAVH7Sw3" type="checkbox"><span data-page-node-id="OkE4av7dJEuMC2kFU7AvN5" class="txt"><b data-page-node-id="wUxwHlMKSSR7aJX67nWKZI"><!--pnid:xIo2DnYVeM8Q4OknyRsd2B-->科研/竞赛成果集（PDF）</b><span data-page-node-id="40pG8WzqbKn3K09cgtpTVR" class="why"><!--pnid:aJz8MyXhxAud9bv9WWd1UH-->双非申请 985 时，这一项是唯一能对冲院校背景的东西。没有它就基本没有翻盘机会。</span></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!--pnid:6YWLnY3EVDs31CHKDokRPM--><!-- ============ 4. 时间轴 ============ -->
+<section data-page-node-id="OpXBAuSzFC3rhJqBhT21tn" id="axis">
+  <h2 data-page-node-id="GcEEjLY7lhQexIcHI9Jc5i"><span data-page-node-id="iNHFl3Ead7P79GJWPZY0z8" class="num"><!--pnid:bJM0cGzq0hNyqy2RewwQcx-->05</span><!--pnid:GRbw7Nju9xSw9KLvyl5o3v-->时间轴：从本月到录取</h2>
+  <p data-page-node-id="ZM1z8JxJW1GAXvX90a1U9d" class="sub"><!--pnid:sUunnWlN6A7e4PjiX5uBIf-->红点为不可延后的硬节点。其余是可调整的窗口。</p>
+
+  <div data-page-node-id="JWvl2EGCh5dhGFCwD8LFRj" class="tl">
+    <div data-page-node-id="UIB1DTn1CbPKFW21tCMOFv" class="node crit">
+      <div data-page-node-id="Qq9G6GlL9yl6WzlJ7YFjx5" class="when"><!--pnid:gdiBengcOOnM0joCSvd97W-->2026.11 — 2026.12　大三上</div>
+      <div data-page-node-id="VZgpPQdBq5F6iA3OC5cfrU" class="what"><!--pnid:8ZMw1MkNrByYQA0vwRGHsA-->摸清底牌 + 最后一次六级窗口</div>
+      <ul data-page-node-id="qBLVo8oUQAh9QtX9XqOeyy">
+        <li data-page-node-id="dWY4tKvQoIZBll38mEFfHH"><!--pnid:a7d22N031wg7ubsd7LMVdK-->向辅导员/教学秘书索取：<b data-page-node-id="8HXf3nFFdfo2cxE1Hsnyvi"><!--pnid:zqbeKeTyNVlu8VpfvhLVVx-->前三学期专业排名</b><!--pnid:8px9upzQGJ7q8dDH7ve6fo-->、<b data-page-node-id="x9J8p3EhT53jL3dVzMadwf"><!--pnid:bJHRUeSVjPB58eCREkRAL1-->统计与数据科学学院推免遴选细则原文</b><!--pnid:l2TTWboSH9YiLAkfOGM3db-->。这两份东西决定后面所有决策。</li>
+        <li data-page-node-id="RzAB47fYFezG6fTqkDR3AH"><!--pnid:CjgNsI6klFLbUlKMKiHe1u-->数学建模国赛结果公布（通常 11 月）。若获省一及以上，立刻归档证书——这是校内科研创新分与夏令营简历的双料弹药。</li>
+        <li data-page-node-id="CLzNbb2vo7Z3qBWyflLxWL"><!--pnid:4CelAX44fieJG0WwTi0Xz3-->12 月六级考试：若目前 &lt; 500，这是大三上唯一一次机会。目标 500+，不是 426。</li>
+        <li data-page-node-id="pSDAfI9iOXMg7WxC5r8EIU"><!--pnid:YxSSgYeceo0NBDqSbkapKc-->确定 3 个目标方向（如：数据挖掘 / 智能决策 / 金融科技），不要泛泛写"人工智能"。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="xrmzh9iPkmKyVgVSPYHmE3" class="node crit">
+      <div data-page-node-id="aFYmFQDlDXRMLCmJNd82sU" class="when"><!--pnid:9UBYr3XN9B6qGcWE6e45SN-->2027.1　第 5 学期期末</div>
+      <div data-page-node-id="PUFB3hCXbXeIyFzViDX2Az" class="what"><!--pnid:2PQ9ZapOFCTqwNMLJG7dPc-->这一场考试决定你夏令营能投哪一档</div>
+      <ul data-page-node-id="Pibh9HRa0LxZmbnyMrc7Cg">
+        <li data-page-node-id="7QbsDjSzOHzONOAI106Whg"><!--pnid:xwF4FSCpOqzO0UGutB45qE-->夏令营看的是<b data-page-node-id="fc76DRs1h7lX16j6tSV8g3"><!--pnid:t5ebO7oMuEPeeJK1UaET4x-->前 5 学期</b><!--pnid:aAS9mb8hwbTxqmJCw8aDRt-->排名。这场考完，你的"外校可见排名"就基本定型了。</li>
+        <li data-page-node-id="I0SOPH340zMTLzrud15ZyT"><!--pnid:9nBdioT0vLawAOr7aJw3cY-->考后立刻自查：按学院细则估算综合成绩排名，判断落在前 5% / 10% / 15% 哪一档。</li>
+        <li data-page-node-id="x1TTRWAB5gjtherILhH9QY"><!--pnid:nYiO8t2WdKSqGuemnqDKrw-->分档决策：前 5% → 冲同济/华师大；前 10% → 主攻上大/东华/华理/上财；15% 之外 → 全力保本校 + 准备考研双轨。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="QKTAQaHj9IrlA4BjqXBrnK" class="node">
+      <div data-page-node-id="SNSGJEVU3XG95U2HjCtzJK" class="when"><!--pnid:n9fZ06MHLynBurm2dMEo0V-->2027.2 — 2027.3　寒假与开学</div>
+      <div data-page-node-id="i7IvMsdA3ggF6cYAJWm6qG" class="what"><!--pnid:wnqRISMwoNBINP8XQu4Y6U-->材料生产期（不投递，只生产）</div>
+      <ul data-page-node-id="8MYlW6i98Ya6isqjeapmp8">
+        <li data-page-node-id="I3VY4gBScRnu9mHOLgAKl1"><!--pnid:vFNHT0LV3N2hojJJdfXC2a-->写第一版简历（1 页）与个人陈述（1500 字）。把你三个项目改写成"问题—方法—结果—我的贡献"四段式，去掉所有产品宣传语。</li>
+        <li data-page-node-id="Z3FxHYan0UbOJ6NVUu0UWR"><!--pnid:0cWcSjP7PdjXTLoS6gRKum-->联系 2 位推荐人（优先：带过你课/项目的副教授以上）。给老师一份 A4 材料包，别让老师自己想写什么。</li>
+        <li data-page-node-id="llNsncr8bFkrvccGgnxwfb"><!--pnid:YgTibnNTETGTq7mDAY9WPy-->补一次竞赛（只选 1 项）：美赛（2 月）或 蓝桥杯/计算机设计大赛（3–4 月）。<b data-page-node-id="corkrVglE842EUWG7iAglP"><!--pnid:HCVWjV0Wu4KJ0K72ZjXg2i-->不要同时上多个</b><!--pnid:14Y40ukNac2mqEAIP9KBMg-->。</li>
+        <li data-page-node-id="yRNVyvs3DCxEaCVmEMdAZu"><!--pnid:nqLHD2ioVZvX6hMTQOtoph-->盯紧 3 月就开始报名的院校（上科大、中科院各所、部分 985 的提前批）。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="ISlWfztc6vhu8TEmDSGj0y" class="node crit">
+      <div data-page-node-id="HZSkIabXFctUmVZhvRb2gv" class="when"><!--pnid:wzo3u9q3AcfWa7b1dDxrxg-->2027.4 — 2027.6　投递高峰</div>
+      <div data-page-node-id="tWcOtWJNDUrZpfuVRKeCpC" class="what"><!--pnid:4TuJnNwCo3hLz40O7eZUVu-->夏令营集中申请，逾期不补</div>
+      <ul data-page-node-id="hTiGwsfe5AD7sSWlQAvgNT">
+        <li data-page-node-id="Rnl0ZWRJS3XCrvMG2en7og"><!--pnid:O1mAXnmDbwKLC6fmRukLdA-->多数院校截止日落在 6 月中—7 月初。建一张表：学校 / 学院 / 专业 / 截止日 / 系统网址 / 材料清单 / 状态，每周更新一次。</li>
+        <li data-page-node-id="HZFixn5luGBlhbNozrEaqe"><!--pnid:8AI9Ku1IpY59ytOgk7B3gF-->投 8–12 所，梯度明确：冲 2–3、稳 4–5、保 2–3。<b data-page-node-id="RpFKuMnZyw3SlMui8tTouU"><!--pnid:8iOGnamnMtHQQtqxRQ4Zo7-->不要只投 985</b><!--pnid:TmYkUYPkAiylASHgzXlBj4-->，双非投 985 的入营率极低，全押等于放弃。</li>
+        <li data-page-node-id="WVlSfEvbYJTW2tjKpfXZf7"><!--pnid:p6U25pcOJe3aLuscRDR2bw-->6 月六级：最后一次刷分机会，若已有 500+ 可放弃，把时间还给期末。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="NO29JRLHxIUCpdRTCoPPTV" class="node crit">
+      <div data-page-node-id="X2Q3bEi1r8pk5fWxF0B4If" class="when"><!--pnid:ihryQD1aflwL6bh3KHcjZ3-->2027.6 下旬　第 6 学期期末</div>
+      <div data-page-node-id="F1VbVvf3pOmBr9FsKutDhl" class="what"><!--pnid:tjstyAOYcrzeLiO3EoRiH5-->校内资格的最后一公里</div>
+      <ul data-page-node-id="YVDyvJdoufD4Htl8TiLmk6">
+        <li data-page-node-id="AymWVdb372RoFI2AXbRvPm"><!--pnid:nuMFj6frmvjwEeiEe7qRl1-->这一场考完，前三学年成绩封盘。学院 8 月的遴选用的就是它。</li>
+        <li data-page-node-id="LhWNvfYdzPnHtfTt32cmhY"><!--pnid:lISGL684rbNiNijRwbdOuQ-->考后 3 天内：申请前 6 学期成绩单 + 排名证明（盖章），预推免阶段要用。</li>
+        <li data-page-node-id="9tlk5trNH07UzjtDqWnNgw"><!--pnid:14twImNEkNsuHpYHorYl4f-->同时自查：是否满足"必修课无补考"——大一大二若有挂科记录，此处必须核实是否影响。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="7UyFnG34NWsnsvJYcKDFtn" class="node">
+      <div data-page-node-id="ldwXeLpMECB0RUVIZn15k5" class="when"><!--pnid:4sAwyTJmVXX0VdwCkGPBlF-->2027.7 — 2027.8 上　夏令营</div>
+      <div data-page-node-id="kUq8eNspYRWpHl7qnJ9O99" class="what"><!--pnid:jpL2NNwMfVpGnT0aWmhVuu-->线下考核，笔试 + 面试</div>
+      <ul data-page-node-id="59kCjBGmPq8oGkAXzPRMPX">
+        <li data-page-node-id="O2NxBJIP3fGDyIq8JgwWCO"><!--pnid:vBLrLU0DsT0vHfbsGAokmg-->常规考核：专业课笔试（数据结构/算法/概率统计/机器学习基础）+ 英语口语 + 综合面试。</li>
+        <li data-page-node-id="sejf8m4Nn2J4xd4JwZmZ09"><!--pnid:qsbfAAPcMbjbam7jcR3VtD-->面试必问："你本科学校不是双一流，为什么我们要收你"。这道题必须准备好——用具体成果回答，不要用态度回答。</li>
+        <li data-page-node-id="64xYnPb2YNEAPm9t0nZaBH"><!--pnid:ljA0lJEBvd8kK37snVbJ0l-->拿"优秀营员"不等于录取。<b data-page-node-id="6xR3EgQFcsBOCtHSSkJvvD"><!--pnid:eHJnalZtPRG5pg4Cz5w4nu-->同时在 8 月继续投预推免</b><!--pnid:XvzS6h60ezIMcrtxHrLoFw-->，不要停下来等结果。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="cW2yl82ETj5pzjRLbtYQte" class="node crit">
+      <div data-page-node-id="ohywpgQqcgjaoZebdKOoGg" class="when"><!--pnid:uZIGxLzGNXUBmoBZUNtzF7-->2027.8 中下旬　本校遴选</div>
+      <div data-page-node-id="IgtdYJxSWArrvzOMJ1Ua1G" class="what"><!--pnid:K7ps6Z2viX50a1cSIeUWiF-->票 1 在此刻决定，无法补救</div>
+      <ul data-page-node-id="wqExHcexXvXIw0Vkfu5hHc">
+        <li data-page-node-id="3OJiHM8UCvUWZiJ8WZv3I3"><!--pnid:bD2RsBmXoekuN5hUJUggLT-->按 2027 年度实际节奏：8 月 15 日前公布学院细则 → 8 月 16–20 日提交申请表 → 8 月 20–25 日专家审核与公开答辩 → <b data-page-node-id="AjOYCYITcuKjAVK843wkmN"><!--pnid:hTmEVapUSsaAO3f9iY1r9Y-->8 月 24 日前后公示，公示期 7 天（至 8 月 30 日）</b><!--pnid:7sVn0YFSruPW5RDhlbAmll-->。</li>
+        <li data-page-node-id="QtuwshNoZF9CtKl4mVaY8E"><!--pnid:TQ3bxHvcMlmxvun5qVMgDn-->要提交：申请表、个人陈述表、成绩证明、科研/竞赛佐证（论文原件、获奖证书）。<b data-page-node-id="jsnk7jzzmpoKGFkomDnya0"><!--pnid:YvzSvPPGFLhW49VwQE2mww-->论文与竞赛要在这个时间点之前"落地"</b><!--pnid:rSztDrYIB9sAmXUZ9bBURE-->，不能是"已录用待刊"。</li>
+        <li data-page-node-id="DME3kByQoGsHCnOcWTE5es"><b data-page-node-id="6smryhiM3WaJtCGJfxzg2f"><!--pnid:K2aaWAvnIZdgi4WGQrbQB3-->这一年学院给出的是 36 个正式名额 + 8 个候补</b><!--pnid:6acxZuwcbu75zMmN7aAXMc-->，其中人工智能 7 个且无候补。名录确认后即封盘，9 月上中旬只走校级公示流程。</li>
+        <li data-page-node-id="e37i3hL6zkn7Yk26FeskeL"><!--pnid:cIRdLdYt8Ch0DNaTWwSIUr-->注意：若同时在外地参营，务必保证 8 月 16–20 日人在能交材料的位置——错交材料的时间等于放弃，且没有第二次。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="xOEWntwqObwi83YeFobHpr" class="node">
+      <div data-page-node-id="4JHulKVLE5pppFM3ettJqj" class="when"><!--pnid:8iCd8JXMT0jNdcKCotNuQb-->2027.8 下 — 2027.9 中　预推免</div>
+      <div data-page-node-id="zVsJaFF2TW5U4ggs2faczn" class="what"><!--pnid:XRsfRj8RDR7wJe6oS9be7f-->双非真正的主战场</div>
+      <ul data-page-node-id="sEPiCRg6yuzM0tprv0IUgc">
+        <li data-page-node-id="fQpFQCUIZh96UYvIHnJu4R"><!--pnid:relijMoStz4YrneuyrqsKT-->夏令营没拿到满意 offer 的，这一轮必须全投。上财信管就是 7 月 1 日—8 月 20 日这一批。</li>
+        <li data-page-node-id="MnXqd3KY9Dz8mnpVUF1qWX"><!--pnid:aRuGXTB8jsTIn1VJCchUrH-->预推免流程短、出结果快（1–3 天），且很多学校此时才放出对双非友好的名额。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="9kwphYMdEe7ptFuISDGk2V" class="node crit">
+      <div data-page-node-id="CqwpO6Bji8vwXcATp8wUJ6" class="when"><!--pnid:mQELTc5Q90zY9mfJeOrL1u-->2027.9.11 前后　校级公示</div>
+      <div data-page-node-id="6uGsN5iEUJuB9PXoelhxpA" class="what"><!--pnid:2fdObfItkNvH61bCQ8vXoO-->学校公布最终推免名单</div>
+      <ul data-page-node-id="6CaTC77bKTuvOqlsXflzBU">
+        <li data-page-node-id="LTF79kf5kMrY4Md52RFlY1"><!--pnid:lXOVM5xTw90pU27EmbJ6ko-->2027 年度是 9 月 11 日开会审议、当日公示至 9 月 17 日。你这一届大概率同节奏。</li>
+        <li data-page-node-id="NCozXg9goaUjWTbSFCPGmJ"><!--pnid:fEQuv8tykWnWgIAt8fNeMb-->名单公示 = 票 1 到手。此时才可以放心对外承诺。</li>
+      </ul>
+    </div>
+
+    <div data-page-node-id="8mG0RxBEdWQNJwvgGP7oKD" class="node crit">
+      <div data-page-node-id="SZALfOkTDo5DgbRSgzOdF0" class="when"><!--pnid:nWICstfxhscj9BQuLnS7FS-->2027.9.18 — 2027.10.20　推免系统</div>
+      <div data-page-node-id="roAH1X8MFXSbVPccctteOn" class="what"><!--pnid:heT0i1WlKZUGMwhfUbTpf8-->全国系统操作，48 小时锁定期是坑</div>
+      <ul data-page-node-id="soOkAnI4tK2suf8qSwDLRR">
+        <li data-page-node-id="Xqi2CuRad1I3JQ4syY8Oid"><!--pnid:rUD3KujWFLsgw5cLG1VLAi-->9 月 18 日左右：注册、填资料、查看推免资格、网上缴费。</li>
+        <li data-page-node-id="08Kcc5OGf2roFVa2VcWgOF"><!--pnid:hmXzI3i94IlkippQeBns8u-->9 月 21 日 9:00：填报志愿，<b data-page-node-id="yq9le6jT0f7ZWrVAYmYr7L"><!--pnid:Tj3mqqw5yR3FLKAro7tbiy-->可同时填 3 个平行志愿</b><!--pnid:pUdHs6pNlYdO1WLVyGVZ6V-->（不分先后）。</li>
+        <li data-page-node-id="hhTc2SqXGMkW2QnQB35UAi"><b data-page-node-id="37vlHFp4FVZKcrTjFR1Def"><!--pnid:WaK8zsh7MW8dOKcX4J8Vbe-->每个志愿提交后 48 小时内不可修改</b><!--pnid:bpGnRmqRZNswNt8SzKLk2X-->；若院校 48 小时内拒绝、或 48 小时无复试通知，志愿自动解锁。填之前想清楚顺序。</li>
+        <li data-page-node-id="AY6k5zf0XTvfUSufcyLKia"><!--pnid:eVme0ZYqUgr9wzMZwzYK36-->9 月 22 日起确认复试通知，9 月 24 日 14:00 起确认待录取通知。10 月 18 日截止填志愿，10 月 20 日截止确认。</li>
+        <li data-page-node-id="0P70Rqi0tzmJ5Ij02QiwO3"><b data-page-node-id="EbDOqJJx8JsJUh0ni5U1Xg"><!--pnid:2RkmgaW5AxSMbVTxxzZ3Kz-->一旦点击"接受待录取"，全部流程终结，不可反悔、不可再报统考。</b></li>
+        <li data-page-node-id="8iEGKOfKN6vmBQcy6qLfkM"><!--pnid:RxPBiuIBJB2sCuEz2Ji4NS-->若投本校，注意学院细则另有更紧的时钟：<b data-page-node-id="83H5s1F0Kx95dcYDINnt6Z"><!--pnid:a1IaQr1iaxC6Hmae5SrP5V-->复试通知与待录取通知都须在 24 小时内于系统确认，超时视为放弃</b><!--pnid:W87EiF0Wd2NMESGI3EBwbH-->——比系统的 48 小时短一半，手机务必开通知。</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!--pnid:HAOSijcpVymbwdsKEkjTiK--><!-- ============ 5. 院校矩阵 ============ -->
+<section data-page-node-id="J9NaHhNeVx2VZOrcygjsIH" id="matrix">
+  <h2 data-page-node-id="uQydsHK1UYY8gECDO5xejt"><span data-page-node-id="tzfJPejbdVILw0ilaZCPyk" class="num"><!--pnid:QhSPpqlr3yalt9u4EBxZXS-->06</span><!--pnid:Ajwt38jekvCySX82jYhYer-->上海 985/211 逐校政策对照</h2>
+  <p data-page-node-id="ScKempHSnS3f8hoNkEZTsJ" class="sub"><!--pnid:qm6V0alNE7W1jLO2b60j9I-->
+    基于各校 2026–2027 年度公开的夏令营/预推免通知。"对双非"一栏是我按准入条件与历年实际入营情况给的判断，不是学校官方表述。
+  </p>
+
+  <div data-page-node-id="BNsYNUntuqWUpqBWWoKV2m" class="tbl-wrap">
+    <table data-page-node-id="FH5Vodaf9HzM6H94W4Iwvv">
+      <thead data-page-node-id="FB7E27sVrrSjtewbrVHZft">
+        <tr data-page-node-id="VA5rW3Hgco0CY5PNRLlg6k">
+          <th data-page-node-id="44JVRbgDyguDLPZOuvai4P"><!--pnid:PK2QgjS8WqUDqlwbxI1uT9-->层次</th><th data-page-node-id="LarwzMzuPJDOWDDCwyZMbf"><!--pnid:v9ry00e2XCIZo8YHAQQLBR-->学校 / 学院</th><th data-page-node-id="svcSPrAznqhfgdKZEfBlTV"><!--pnid:8sMu9DY5x79tNnHkMqNjm9-->成绩门槛（原文口径）</th><th data-page-node-id="B7OA76mT5DZOqaq6jLUBId"><!--pnid:vpby3KlzfNFjTSTHn3CRZC-->英语</th><th data-page-node-id="7W0pHkqWW0lN7mEdqqEuW2"><!--pnid:710gIrk5nCUe7KPOTSoDmM-->院校背景</th><th data-page-node-id="0ckn8sX1MbYG6FzZtnewPH"><!--pnid:gJs2MSm2XMBPIhQ3dR4zWH-->对双非</th>
+        </tr>
+      </thead>
+      <tbody data-page-node-id="2rgnVoEvUY8OGRlkCoAKSZ">
+        <tr data-page-node-id="WWEYTcyscrkErUNBEuRWqZ">
+          <td data-page-node-id="aEl0bORmuRytU8wQ0tUtrn" rowspan="2"><span data-page-node-id="jg7ijVLtCcs6KaNjKpr0q0" class="tag t-red"><!--pnid:aCndB8oQNh0QZZmPBjn8pk-->985</span></td>
+          <td data-page-node-id="HMa4zvr0rNECmkWLmz9LSL"><b data-page-node-id="b4obbX7WlMz9Qvuqsmr0je"><!--pnid:dLrWeS8fp49vRvsJnLJ4Fi-->复旦大学</b><br data-page-node-id="vzTI1vzEyd6Hc8SzTLEzI3"><span data-page-node-id="8Zl0eO60Rb8PWXuyKERwRe" style="font-size:12px; color:var(--sub)"><!--pnid:chKEDQEKAba5T927qQMvWd-->计算与智能创新学院</span></td>
+          <td data-page-node-id="6F5ANl3ZoWUoyMOwHk0nvq"><!--pnid:z4I4UFzewmC8F9BEjPY0Yh-->前 5 学期总评排名<b data-page-node-id="fgFMq16mg5CrjbVd51BQEN"><!--pnid:hcCx14R6ZLrjgxEM1WWgPQ-->前 20%</b><!--pnid:wlM4WDjEacdiYXIZ0oX3Aa-->（科研突出可不受限）</td>
+          <td data-page-node-id="oyzEK1dAiNp0AU1A7UEFdk"><!--pnid:5KrIrQhzFOry6jh2Sqn8Qz-->六级 550 / 托福 95 / 雅思 6.5（院系间有差异，550 为经管与计算机实际隐性线）</td>
+          <td data-page-node-id="ihC99ps74IAnwNzAozRmhM"><!--pnid:lbL7bj8Kp2vEpwjw3ZxrKD-->卡本科背景</td>
+          <td data-page-node-id="uYjc8wPPoHVTKwkZdIupsL"><span data-page-node-id="ZvNSX4y8T6XumxUg52m558" class="tag t-red"><!--pnid:cEBMLkQ8Epxmypz3iNYOPx-->极难</span></td>
+        </tr>
+        <tr data-page-node-id="fcqmhassVJe1Tu6B1TzQ0H">
+          <td data-page-node-id="AFCb85U0woG5aYFH3skB1q"><b data-page-node-id="oQc4dihCcqebNqlurY6aAc"><!--pnid:IqNf6O2VS2GIllzDU5baU9-->上海交通大学</b><br data-page-node-id="ZfRiX7EjrFhmFemUAIWDXk"><span data-page-node-id="YQCQTfI8QQCRKu61k2XzRh" style="font-size:12px; color:var(--sub)"><!--pnid:ayPehRcBX8FoT2wJ9PSW3e-->电院 / 自动化 / 计算机</span></td>
+          <td data-page-node-id="9DdRCsDBU5nlpbJIn1zKMf"><!--pnid:tUYNCVQz4FISZtuSHgCuhi-->前 5 或 6 学期专业排名<b data-page-node-id="acKXMakxXzwddnVlH1OcM2"><!--pnid:hESevu05vVnI7GrTLr6nDS-->前 30%</b><!--pnid:WQxFU72pTQ66BlOYVobFfe-->（C9 可放宽）</td>
+          <td data-page-node-id="hoSacPOx08RdedPgkCeBSu"><!--pnid:oVNS10ndXApqFhPpdN4pcz-->CET6 ≥ 425 / 托福 90 / 雅思 6.0</td>
+          <td data-page-node-id="dFDyWaEyCgnacC3qEzcA37"><b data-page-node-id="FlFBCfAmSlg8D7wDvsKMh0"><!--pnid:SpcI02CSDwmLdqZtWceo6Z-->明确限定"双一流建设高校及建设学科的理工科专业"</b></td>
+          <td data-page-node-id="v19weiDKxE4af0lbrLwezI"><span data-page-node-id="w0wl9rM9TglfY6a62ZPe9M" class="tag t-red"><!--pnid:JOi6Zogf0F48C7RtwVTXiS-->不成立</span></td>
+        </tr>
+        <tr data-page-node-id="tbdfSvcRlobMoFhKY4g5AB">
+          <td data-page-node-id="YQJ62K6R79G0ayip7AiAUL" rowspan="2"><span data-page-node-id="tlQcfjll5HL07vGT4dXaXg" class="tag t-amber"><!--pnid:t77zwbWGOtwEmQ06DGTYdW-->985</span></td>
+          <td data-page-node-id="knNxwXxB0lL6uxn9JN1M8h"><b data-page-node-id="mIBIqMcu08xj9vYQYYJ3UK"><!--pnid:h3gqhhjs3v2fzfyaZg3gdM-->同济大学</b><br data-page-node-id="pCcCygxRudZz12npYJ4ciF"><span data-page-node-id="gDSUieI6RkZ3dUDQZeQQzO" style="font-size:12px; color:var(--sub)"><!--pnid:dYI7AbFlkBiuUzsL508Cng-->电子与信息工程学院</span></td>
+          <td data-page-node-id="uI6ZotclygVsa7VPGKCq2r"><!--pnid:WPCZINSXziJoHXom4JXjN5-->未设具体百分比，要求"预计达到所在高校推免要求"、成绩优秀</td>
+          <td data-page-node-id="12t2LBYRd438IR0gfoV43f"><!--pnid:0duaP2XLzD4tcU68R4rQxC-->直博 CET6 ≥ 425 / 托福 90 / 雅思 6.0</td>
+          <td data-page-node-id="itrqO4ObxXPUkicevW2CZ4"><b data-page-node-id="oqwcIbhL1gd1ece7Oua3uQ"><!--pnid:hTBmVjqJ1u3lJ4bCz4xW1D-->未限定双一流</b><!--pnid:anBMYKo1nT7SE8xCvn6yrh-->，"国内大陆高校电子与信息工程及相关领域"</td>
+          <td data-page-node-id="T0Uma4zRnblO0XcKzOs0sC"><span data-page-node-id="U3alOuHTKY1VfD03T8VwEe" class="tag t-amber"><!--pnid:HOl5ymmYjHZXU2HnBYwhM4-->可冲</span></td>
+        </tr>
+        <tr data-page-node-id="0WyBuoKjWz8j4TGmLarAcX">
+          <td data-page-node-id="P3OafZKroKqD5dEJSMdiBG"><b data-page-node-id="YjxlF4DFIND1lOx9AG1V7F"><!--pnid:xRWBEL5eTcnWm2UzMHPR5S-->华东师范大学</b><br data-page-node-id="GEIHSXH7E8EoFbA0yWxgqu"><span data-page-node-id="0Ig7QZMdfr5UyzTftJts6v" style="font-size:12px; color:var(--sub)"><!--pnid:weORNYrUdhIhJFcBij4D0n-->计算机科学与技术学院</span></td>
+          <td data-page-node-id="eUdh95SJLBoMZ3bQUtU7fd"><!--pnid:pZcINFmntbkszfB1cQeGAE-->前三年排名<b data-page-node-id="dkwClc1RkLU51mFypHoiPF"><!--pnid:hErygIFs1kUnp44gcBCb9B-->前 20%</b><!--pnid:p4Vtr7vRfudpW2dipdpRLg-->（招 60 人）</td>
+          <td data-page-node-id="4UTt4kQsEO1wpAh7ZguMt3"><!--pnid:fHqTdBgaSXDOUzQBkHaHgl-->通过六级</td>
+          <td data-page-node-id="gwnSVXY6VY3B6bBYA7dGgV"><!--pnid:tjB2kXWDIU8JnYsCawIcF9-->未明确限定</td>
+          <td data-page-node-id="YfHBxIRx7h2WfIoo40pZVX"><span data-page-node-id="06JUTEMnrYLhj0DWDu3pce" class="tag t-amber"><!--pnid:aZEsArE8zDXAE7Q1JET9I8-->可冲</span></td>
+        </tr>
+        <tr data-page-node-id="43K92knC0Pdf6YsfbDZSEr">
+          <td data-page-node-id="uTI6KUALqAzdtLvVd3vNdP" rowspan="4"><span data-page-node-id="mzSylbW2Qh37GZLkGFO3xW" class="tag t-blue"><!--pnid:k2MBpfL3xmOplnmk2vTbQv-->211</span></td>
+          <td data-page-node-id="P7zwRrKGCJxMESDT5XPDzC"><b data-page-node-id="2baWpmZlvwobsigDlQlzQ5"><!--pnid:MpsD2pHmweD3CEvJbsBp9I-->华东理工大学</b><br data-page-node-id="TQB2dTgPLVUYK300ZRLnFr"><span data-page-node-id="FTD5GnqvZCPCesJbLpdRfr" style="font-size:12px; color:var(--sub)"><!--pnid:UM9TBxgBGGH734wF4mLKpH-->信息科学与工程学院</span></td>
+          <td data-page-node-id="ewlHxJSy4Pj64jZkEAPqKe"><!--pnid:Wwf8TNVRBmCHzwec0d5Yjr-->双一流前 40%；<b data-page-node-id="NGdblebm2iJCznaKjHqVe0"><!--pnid:bPhNbS9KhCNPNdwomrXjW3-->其他高校前 10% 以内</b></td>
+          <td data-page-node-id="GW2a0nXwyPodU1o8onpoBB"><!--pnid:isMVEf9JVikWy3ySQdVepV-->四级 480 / 六级 425</td>
+          <td data-page-node-id="ekM8Ib6gL2lRsIsJkhaxOK"><!--pnid:GjIfwosjKcwwsdl3oCNvFl-->不卡，但用排名换</td>
+          <td data-page-node-id="yZFFHcZizxTV5PyFelmZgi"><span data-page-node-id="mi5CBXHKDNeEmz1odFgWVI" class="tag t-green"><!--pnid:STDJOF8hj4t3Q2gcSRYvqt-->主攻</span></td>
+        </tr>
+        <tr data-page-node-id="chEAVfO9az1Tos5R1NB12d">
+          <td data-page-node-id="z8KXcjzeIYmlAtoffP0Dip"><b data-page-node-id="cl4FfVzUWd9ym08kbH4L9M"><!--pnid:Iqk0AVEddTlZqFdFKjgccq-->东华大学</b><br data-page-node-id="5Xro3rEexhX1uiM93o456A"><span data-page-node-id="L2V3XU4XAhd5EgNPDQ7Vax" style="font-size:12px; color:var(--sub)"><!--pnid:ktazVV5JAkNZ6Gl42PRMjC-->信息与智能科学学院</span></td>
+          <td data-page-node-id="uBSgduW2x5wgp8Tzesxxod"><!--pnid:X7Z13DTRczVukNiWtyGz7n-->未设百分比，"学习成绩优秀，能获推免资格者优先"（招 100 人）</td>
+          <td data-page-node-id="Yyrl7FrIaEpJykrM7XCdSv"><!--pnid:aehUNOTaQWVqVw6guEUgpZ-->未设硬线，提供四六级/雅思/托福证明</td>
+          <td data-page-node-id="jSWoEunxxvKiwxsdMSeRAW"><!--pnid:VFMRNbbillrYJxqVPgnsrV-->未限定</td>
+          <td data-page-node-id="FUh97EiAmrFK1yvL5WYQMZ"><span data-page-node-id="Ev5Vhyzb2skufHrzW77sxf" class="tag t-green"><!--pnid:y3koLRND6UAs8fHGi3ZqG9-->最友好</span></td>
+        </tr>
+        <tr data-page-node-id="g2ooBwyEwWpHry1LAJTZ2t">
+          <td data-page-node-id="0EH9mr3jqr8ssUzJUA9zBy"><b data-page-node-id="cmcYnGidJ9MXkLM5xhPsUm"><!--pnid:b8PsuoXKbXs1luxJ3b6Cmr-->上海财经大学</b><br data-page-node-id="D87SRTo400aZxyVY46aXE6"><span data-page-node-id="9sUNrqD40Dxp4klV45VKaW" style="font-size:12px; color:var(--sub)"><!--pnid:efA4rAkk9XjhHN6zZYo1ro-->信息管理与工程学院</span></td>
+          <td data-page-node-id="D7jzgg4A9XTWHFEBXX6J9R"><!--pnid:OQhLhZd6GyBsHOJ1Ryfpd4-->双一流"名列前茅"；<b data-page-node-id="MeUsRvPoLYDFXU1cP1UaA1"><!--pnid:PT3GV3SQ80nHfVMrmuhmou-->其他高校前 10%</b><!--pnid:qB1QEsYRbra3Iv8PsPxUmc-->。不限本科专业</td>
+          <td data-page-node-id="fvk0bHCs8OwvVPtOkSRysl"><!--pnid:Radh9oMy633dAeWEcdjrpg-->"英语成绩优秀"（无明确分数，实际六级 500+ 才稳）</td>
+          <td data-page-node-id="2Q4Ep0GGoOquAIajrpmkki"><!--pnid:ihHquTuiq4azs7O8VsEzR6-->不卡，用排名换</td>
+          <td data-page-node-id="YKJ2swYJ2M7ytnCORNAetQ"><span data-page-node-id="H6X4Q8Y7K5Ky57XAgZcOgv" class="tag t-green"><!--pnid:gv8eCUW4QxwIyN5ENat6Xv-->主攻</span></td>
+        </tr>
+        <tr data-page-node-id="1tEBNjScvh0w0xR5qssqUe">
+          <td data-page-node-id="yYkuYkosaaeokskCrQz1he"><b data-page-node-id="fL6FpDMWkLrEXDuV3PHlr8"><!--pnid:GnLmAqNNrTgzo1Ex6O1uRm-->上海大学</b><br data-page-node-id="sf0xJrSsoBUDqvfPZn8A4l"><span data-page-node-id="5NZIQAwfPoh3yE2Esy15n7" style="font-size:12px; color:var(--sub)"><!--pnid:57KMoB78Aq5cAmxdt34czj-->计算机工程与科学学院</span></td>
+          <td data-page-node-id="1qcpPMxRQCkKiWT6r56zk9"><!--pnid:U7HGXCLhDedLjsgEwnbNvC-->双一流约前 20%；<b data-page-node-id="EFT8pI6B57UFLGxM25xvEv"><!--pnid:KRTghtD6TeeXQWKtRJfsdn-->普通本科前 10% 以内</b><!--pnid:LsHd80mfXowRF9pleLnG07-->（据机构公开整理，待官网原文核验）</td>
+          <td data-page-node-id="3wbMVgREBnlYcR9biVStIN"><!--pnid:xjsL3quFdHcwrrYVAwCVNn-->四级 425 起，六级 480+ 提升通过率</td>
+          <td data-page-node-id="DxZaGOxsDglYrUFQ0y4Hss"><!--pnid:G17S9R1xMD7IinsxezoVqT-->不卡，用排名换</td>
+          <td data-page-node-id="WhTkYT8jkiV1C7nzRz9Dqc"><span data-page-node-id="YmOKxuGKxFKpZfBjzolri2" class="tag t-green"><!--pnid:masVizRZCjQ7CRPeJ5r1Sx-->主攻</span></td>
+        </tr>
+        <tr data-page-node-id="uCXBTe592Lj5p1eROtoAwd">
+          <td data-page-node-id="SGNidQ9BKmmRl5ET23BytI"><span data-page-node-id="XwQfmUp7YlmNfaKVEYERUW" class="tag t-gray"><!--pnid:Xz0mdtFRdpLzi4fwbDTaYo-->双一流<br data-page-node-id="2VFXxRu2zqgzLk599wgWgq"><!--pnid:53FfmbgcyRTeW4bMXTPxA6-->非985211</span></td>
+          <td data-page-node-id="538JSEhFQ5jjtH5jxeVLxi"><b data-page-node-id="35yheZAkNBG9gNWjpwT84I"><!--pnid:pg5msDwiq3RhDHYePdklLr-->上海科技大学</b><br data-page-node-id="GouiXaKkMOYWBsCSkreUwc"><span data-page-node-id="a5Aobige0ROYUIrWruDfw2" style="font-size:12px; color:var(--sub)"><!--pnid:HYs1Nw5UcT1XUB1Sx5UoS2-->信息科学与技术学院</span></td>
+          <td data-page-node-id="te97A32demAs9wQ7oCcrKO"><!--pnid:rWzWhYhqatoqzh9UDU1Oak-->竞争强度接近华五，实质上按 985 标准筛</td>
+          <td data-page-node-id="VIDrFzUlQuRHWF2BWILbRO"><!--pnid:XJMdVFM1jWPksceYM3As17-->六级 425 起，实际 500+</td>
+          <td data-page-node-id="1zg4RaEIhB06yfS0UKNk3i"><!--pnid:DkmNwzpzKtKp8xQH2npQEn-->相对开放但看科研</td>
+          <td data-page-node-id="USlJZppS7HR3e5bclEuUf9"><span data-page-node-id="9p4zweDoT99E8skr74gpH0" class="tag t-amber"><!--pnid:bmuNMzsvc8Qpb3ygleQeY6-->有论文再冲</span></td>
+        </tr>
+        <tr data-page-node-id="oY2HLzUtgI1R9rHbqlkXeo">
+          <td data-page-node-id="0Ft3i3d53xtDNpfKXwXd4C"><span data-page-node-id="lQYxfggAe59Nw7Qjcace8d" class="tag t-gray"><!--pnid:XefPv3X1t3aSJdx0I9hh1N-->本校</span></td>
+          <td data-page-node-id="I95tTDOXnkBhC7BJ9Qifp4"><b data-page-node-id="omPuGtPy2xVP8A8tqeezaM"><!--pnid:7t5DDKMOin7LHWj1KFjchf-->上海对外经贸大学</b><br data-page-node-id="NKC8aN8OSEUga2iPA60KGk"><span data-page-node-id="AjYXrBfcipWaES396EgLVp" style="font-size:12px; color:var(--sub)"><!--pnid:OH8J5WFf9JWdBwuRUAEqty-->统计与数据科学学院</span></td>
+          <td data-page-node-id="MRnlrgo9rPqklV4J5DWRID"><!--pnid:3fug8szTsOdjdMlMDXZqpN-->校内资格即门槛</td>
+          <td data-page-node-id="gTYGVlKZPuxUvrMscCrXuq"><!--pnid:gufspGqXX0zjS1pNzFgzZW-->六级 426</td>
+          <td data-page-node-id="55hQ7aia35lOjzeiGbdXQr"><!--pnid:3yKWsRJLMHEiM89OhifvaF-->—</td>
+          <td data-page-node-id="p2lYmLq6pATXiFHbuKmHDG"><span data-page-node-id="qdnNeZet4zYRfDaWCq4ZW8" class="tag t-green"><!--pnid:0D6Grw86SvGuZPgDOcuTua-->保底</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-page-node-id="uJd7ST3BgZtWXIDsL5lq1t" class="stats" style="margin-top:20px">
+    <div data-page-node-id="WtJRiLzLxYIaxkEdphQ6Oy"><div data-page-node-id="sH87Sz57SL8jz341axOVM3" class="n"><!--pnid:VnXzNToX3CEElKROjeaLH9-->4</div><div data-page-node-id="oBkCII94dEOv9hnE1CBSBe" class="l"><!--pnid:5qGxx9OvNIdnUNFQ4vslnX-->上海 985 院校</div></div>
+    <div data-page-node-id="jXeB56sMxb7JYEwo15JFDZ"><div data-page-node-id="SsQ4SQ44B8HhDDYk9XqoiC" class="n"><!--pnid:VvZQi4urwiDjxBb52W1wuG-->6</div><div data-page-node-id="EztRiJRqbUlhK3Jlywq8Lr" class="l"><!--pnid:Oj9U0pW6YUajAT4zovdcTI-->上海 211 院校<br data-page-node-id="C8WPgJpPiO3ZrJityzSMCw"><span data-page-node-id="zDFbuPItcflU0BLUEVHxFq" style="font-size:11px"><!--pnid:yB8yBJUtqL5UPI9dweS22T-->(含上外、海军军医)</span></div></div>
+    <div data-page-node-id="r0Ck47lkKNxkXpwEAwas2n"><div data-page-node-id="T4ThzfCv6LqJlk0BT83KmQ" class="n"><!--pnid:1LLCqwR1OXfLvWLefmNMr7-->9</div><div data-page-node-id="cA5L8gPdnvO1zMe4iPYE3m" class="l"><!--pnid:DhrGm4ednFK6MELHhZHSSf-->与 AI 方向相关的可投学院</div></div>
+    <div data-page-node-id="dWsnnLRHpY65dJfRzxdtRC"><div data-page-node-id="KStcVivY18eB9VXJPyjl51" class="n"><!--pnid:zByH8PAGtCedCvRySwjOF6-->10%</div><div data-page-node-id="OJFFxo7RMesNYXPlErOCQG" class="l"><!--pnid:fbInuWnqHAuyq5TOouCCoc-->211 层对双非的通用排名线</div></div>
+  </div>
+
+  <div data-page-node-id="CdxbNC3QJk7f3oqcZd3xhP" class="callout warn" style="margin-top:18px">
+    <b data-page-node-id="Yd3oPPh6RhXniPdugYbISO"><!--pnid:J1pSruSAZfrKsP20vdtLng-->看表要看懂一件事：</b><!--pnid:HfBzV5HaHLYIOvrMNeAYsD-->所有 211 给双非开的价都是一个数——<b data-page-node-id="gXoj9AiM2AXneVrJiuUaZN"><!--pnid:ISgILGTA54wmR5GiAbjC8Q-->专业前 10%</b><!--pnid:ogJxOZethj09naSozrR2Br-->。这不是巧合，是同一条筛选惯例。
+    也就是说，你只要排名进前 10%，上大/东华/华理/上财这四所是一组可以同时投的选项；进不了前 10%，
+    这一层全部关闭，只剩本校与预推免捡漏。前 10% 就是你的生死线。
+  </div>
+
+  <div data-page-node-id="UQk63EpITDsLOe5dLpQbbR" class="callout" style="margin-top:14px">
+    <b data-page-node-id="ScWcmenOYY06Qvla0enkj4"><!--pnid:T8oWSqTen6frYJnV3i1kBZ-->关于上海外国语大学：</b><!--pnid:4vNtSV8nLxlw5XRtUkP7QV-->它是 211，但学科结构以语言为主，与人工智能方向不匹配，本科 AI 背景投递没有专业对口入口。此处不列入目标。海军军医大学同理（医学口径）。
+  </div>
+</section>
+
+<!--pnid:Z4XqxTsihxxPHQvpefx5bo--><!-- ============ 6. 策略 ============ -->
+<section data-page-node-id="aatGCrviLWEhN9h4lHjEeh" id="strategy">
+  <h2 data-page-node-id="EelLhIlnXCvNC5E7rF9nb3"><span data-page-node-id="PaDatJmuLd2DyVZkynpp6b" class="num"><!--pnid:MT372xQodGwo8KEqVmU3mK-->07</span><!--pnid:5pcvmfu9l15D66hQ0lvNik-->投递策略：8–12 所怎么排</h2>
+  <p data-page-node-id="wzaAdgCsYeOVVAOo5FPsOX" class="sub"><!--pnid:1vzLSkLsLwMWRrXInBdbIa-->双非最常犯的错是"全押 985 显得有志向"，结果 7 月一个营都没进，8 月才慌。</p>
+
+  <div data-page-node-id="sx9XfzBIQDtMGuxbqdkZEs" class="grid g3">
+    <div data-page-node-id="09CBWXHRlA8XFI6fVVVTMr" class="card">
+      <span data-page-node-id="awQQmY72hnCprH9w5uZ35A" class="tag t-red"><!--pnid:HpPjKyrLdEBckqCt5UqQvw-->冲 · 2–3 所</span>
+      <h3 data-page-node-id="x0d6iFI5yw23OlSsICRCLW" style="margin:10px 0 10px"><!--pnid:Ig21I21iGPaHbknWklsLN9-->同济 / 华师大 / 上科大</h3>
+      <p data-page-node-id="jNjHMD6Mvdpe4LBfHYb75c" style="color:var(--sub); font-size:13.5px; margin:0"><!--pnid:FBgQN5W5AiYtaymNX37F8w-->
+        入营概率取决于排名是否真进前 5%，以及有没有可展示的科研成果。投了当练兵，
+        不要把它当主路径。若 7 月没入营，属正常，不必调整策略。
+      </p>
+    </div>
+    <div data-page-node-id="2TkqudSjmtijqSt6N6mgsu" class="card">
+      <span data-page-node-id="u1nwT6iq27Ize63U3e2zPN" class="tag t-green"><!--pnid:o29YeWSjQYG5bCYHvrQEV7-->稳 · 4–5 所</span>
+      <h3 data-page-node-id="XTaBvSEzlSVNNNqvK5sa7z" style="margin:10px 0 10px"><!--pnid:suYofuTCq6zOCH3pPgZrag-->上大 / 东华 / 华理 / 上财</h3>
+      <p data-page-node-id="WYffnuzkErsBgEfaj14NhI" style="color:var(--sub); font-size:13.5px; margin:0"><!--pnid:UVhoaX74KxvPGuAkIxv6Av-->
+        真正的主战场。<b data-page-node-id="GIQ7pVhteAJYDHu5hYHmiO"><!--pnid:Pkg1AHeVS7855fetYg3snT-->四所同时投不冲突</b><!--pnid:CF23lh8Lr6Je7lRslamMct-->（时间错开、系统独立）。上财信管"不限本科专业"、
+        东华"未设百分比"，这两所是你最该重点打磨材料的对象。
+      </p>
+    </div>
+    <div data-page-node-id="YWBksyMqO9SuGzieDsBYM4" class="card">
+      <span data-page-node-id="xZrRsUw9CuVLrnVebMgAio" class="tag t-blue"><!--pnid:bPyT2baeR1ckjbgVRGpQiS-->保 · 2–3 所</span>
+      <h3 data-page-node-id="73QcovQMJbGxWm4FZQRclm" style="margin:10px 0 10px"><!--pnid:8cTudYqQOioEr7k4tSgs4s-->本校 SUIBE（含直博） + 邻近省市</h3>
+      <p data-page-node-id="YV2lbjDXKvpQzLhwkkevCS" style="color:var(--sub); font-size:13.5px; margin:0"><!--pnid:SMc96Y7xdgKMtTaMFVxbZP-->
+        本校是最确定的落点，必须投，而且要按"最想去"的规格准备材料——很多人在这一步敷衍，
+        最后发现只有本校给了 offer。<b data-page-node-id="kNWWPBBxMOA3n920o3jpjc"><!--pnid:UXbvrNtLgdqZucofpOYr23-->注意接收端名额很窄</b><!--pnid:2Ysp5VaPgDv49Chmjer4cB-->（2027 年统计学院 1 人），
+        本校直博（3 个专业、5 年）反而是更容易进的口子。
+      </p>
+    </div>
+  </div>
+
+  <h3 data-page-node-id="H1fxKgPQUrlLAKqmfTf666"><!--pnid:J9I3hLgY9VFeLL3CTLhoJ3-->9 月 21 日三个平行志愿怎么填</h3>
+  <div data-page-node-id="Bz41fo6OR4bjnHE2lr6t42" class="tbl-wrap">
+    <table data-page-node-id="KbbXLn24KIC85Ii4i4pxDk">
+      <thead data-page-node-id="bfbtZixwW0D7xuZAB8gady"><tr data-page-node-id="ofpp9qfHRbHkXF8GyBUyqU"><th data-page-node-id="HM849KiAani79sWu6yszTZ" style="width:90px"><!--pnid:Jbg4QYenEkqwNSvApBxBEP-->志愿位</th><th data-page-node-id="N1HBKO7giBgIxlGCQlJdv0"><!--pnid:Vo2hKWutKcdHa5AoPEH1vw-->填什么</th><th data-page-node-id="AgnF8W5xzqZlfUpllv3ApP"><!--pnid:j4mpUJfaxxnmQ9Sf8MVuJO-->理由</th></tr></thead>
+      <tbody data-page-node-id="MnRiJ40bOUSuXL34zVPETv">
+        <tr data-page-node-id="T6AdkK1lniTR8eM5Ys9Bte"><td data-page-node-id="sMq6RM6TzqKzCdEExKcYcA"><b data-page-node-id="oqvc3TeO9y3Hf3ItoUDiAl"><!--pnid:6OP3nSSm8PkeNp6krW5ua8-->志愿 1</b></td><td data-page-node-id="1dsIK2kPr0K3yf3uex6xk1"><!--pnid:lxktEUlcJk6WIkkAByo4p6-->你已经拿到"优秀营员"或预推免口头承诺的那一所</td><td data-page-node-id="Bdt1x1F1yHiuds6Nt2CxnO"><!--pnid:sF2kNj5uyJ3oqdsbTVIQbP-->这不是"冲"的位置，是"兑现"的位置。系统里填它，是为了接收待录取通知。</td></tr>
+        <tr data-page-node-id="mF8o4vymGtU7OQUB7DmqNz"><td data-page-node-id="ZknsxH8w5B5yeN9dGpp62B"><b data-page-node-id="NmzfmZFPyK8G3xOiaSliBn"><!--pnid:FB5P6GAaK1RiBtPvaxi5aR-->志愿 2</b></td><td data-page-node-id="ygwAqdp64vKPKZIRo7GSgH"><!--pnid:Qp7dzXAJ588HIBulyN4oa8-->次优但已联系过导师/明确表达意愿的一所</td><td data-page-node-id="btJYXcskkqdMb2Qp6tvhct"><!--pnid:eqmJwH8SmWiBbEOsIKMD3k-->48 小时锁定期内不要留空位。</td></tr>
+        <tr data-page-node-id="itsPSZvQpm7Q7Omns1O4fX"><td data-page-node-id="pu09w6x6I6eaj3omiuX8Vp"><b data-page-node-id="0DaU1JQjRbPDgp4fVVVKaF"><!--pnid:7nJEiRI09Eyaj0EguqcMAD-->志愿 3</b></td><td data-page-node-id="8HvgCcjbr7kVD0biEEGLX5"><!--pnid:uhKdhL196T3Qm9cc77XLdr-->保底（通常是本校或给了明确信号的院校）</td><td data-page-node-id="5N2RIvuaDGPmNP6qjTGtF3"><!--pnid:tZLFhp1fkXxH3y2vF7zTaX-->前两个志愿若被拒，这一个保证你有学上。</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div data-page-node-id="YkO0dSV7Jt6a68oXBsBTeF" class="callout danger" style="margin-top:14px">
+    <b data-page-node-id="3H1gEh0gbFgIorWWyLmSPR"><!--pnid:eGN7wMYCN0uGuNu4DBq24T-->只能接受一个待录取通知。</b><!--pnid:LGaR9uQIDarFscsT0fCKMv-->一旦点了确认，其余志愿全部失效，且不得再报名当年统考。
+    在点之前，把所有结果摊在桌上比较完再动手——没有撤销按钮。
+  </div>
+</section>
+
+<!--pnid:suu3DHSFCdZ8qyoENwX0mh--><!-- ============ 8. 本校 ============ -->
+<section data-page-node-id="eAp4Iryo8W3P8BoduKOLaR" id="school">
+  <h2 data-page-node-id="PRbaSHywFZ6JuwpM5HYTdV"><span data-page-node-id="cxwXE06cdwRkwwwIvBPVAU" class="num"><!--pnid:Bpl5X2D7WAyoQLU0jc7zDr-->08</span><!--pnid:cOO0CvxepOaXrmz6NNaIWM-->本校保底：先分清"推荐端"和"接收端"</h2>
+  <p data-page-node-id="ejDjzWkWbCuT5hP5qREDoW" class="sub"><!--pnid:hAroJBlFoWQhroGf0xQvwJ-->这是前一版最容易看岔的地方。两个数字分属完全不同的流程，用错会直接误判自己的机会。</p>
+
+  <div data-page-node-id="KvpFkFwmBh2gkXAUMhlf7h" class="grid g2">
+    <div data-page-node-id="VeY1xabol5Nh99xtnbUR0N" class="card" style="border-left:3px solid var(--accent)">
+      <span data-page-node-id="A4cYsxNGX7LczlmZ6Z40Z2" class="tag t-blue"><!--pnid:wY9kkvyxDmcerUdKaEC9WR-->推荐端 · 你要争的</span>
+      <h3 data-page-node-id="LAzJFAGnZdlbmCSKlGUiYy" style="margin:10px 0 8px"><!--pnid:2YcvHiHn61EVWV5VNz1bVl-->学院把你推出去的名额</h3>
+      <p data-page-node-id="Vv1qhnrBsl79v7gudlVqdl" style="color:var(--sub); font-size:14px; margin:0 0 8px"><!--pnid:qi18H4DrJl1ZTbxQQjRIKE-->
+        2027 年度：<b data-page-node-id="8ZWvUCMB1jr9Us8iitSYVK" style="color:var(--ink)"><!--pnid:oz9cEgbU8cKIvvojUgsfNd-->全院 36 人 + 候补 8 人</b><!--pnid:H2RofBVn9MuwPkJ1l28twO-->，其中人工智能 7 人。
+        这是你拿到"免试资格"的唯一来源，与你想去哪所学校无关。
+      </p>
+      <p data-page-node-id="ufDoEhMKCmzJvxNa1owGvt" style="color:var(--sub); font-size:14px; margin:0">
+        <b data-page-node-id="xhUdu0xKzaZMMdTIDrUqgi"><!--pnid:oiJtZiYq96IZdIzEMapJic-->你的目标位次：AI 专业前 7 名。</b>
+      </p>
+    </div>
+    <div data-page-node-id="xitfmrVii1HLTNsjGBfBDV" class="card" style="border-left:3px solid var(--warn)">
+      <span data-page-node-id="Yn6UAFgr427QVMF6IIZWV8" class="tag t-amber"><!--pnid:5lANV6WJEbqfwa3qO45k2g-->接收端 · 你的兜底</span>
+      <h3 data-page-node-id="IUaVQsJc9vUQBzIrmLpuGA" style="margin:10px 0 8px"><!--pnid:lgfbvh1J6h15GdJcAwdlGj-->本校研究生院收多少人</h3>
+      <p data-page-node-id="lrise5KSwPzrQd3UCaGqen" style="color:var(--sub); font-size:14px; margin:0 0 8px"><!--pnid:DvEBl8CaaUWFELufpLFzRL-->
+        2027 年度：全校推免拟录取 <b data-page-node-id="sXEIC3kdwuCrcX3Cj2Aa5H" style="color:var(--ink)"><!--pnid:CE29zU0be55BtF5fSpglAg-->32 人</b><!--pnid:I0RWSpWRadhfwLWDMy7wbF-->，统计与数据科学学院仅 <b data-page-node-id="HtdAJPhCdXDAq8s1X7xtBL" style="color:var(--ink)"><!--pnid:B9g8OVcKGchEaTvb4RxTXH-->1 人</b><!--pnid:iIKxkga1QcnYqNKbJwBKOM-->。
+        名额主要被会计（10 人）、金融、经贸占走。
+      </p>
+      <p data-page-node-id="uxOzK9FR9Jwl8XTmYq37xe" style="color:var(--sub); font-size:14px; margin:0">
+        <b data-page-node-id="JoLDqyIwCT4ThtafoTN74I"><!--pnid:8YXyJKDuCHnWxmQxZu9rS5-->含义：本校兜底没你想的那么稳。</b><!--pnid:9FkhF6LghdzPFsezmoovMe-->"留在本校读统计"这条路的容量，比"拿到推免资格"窄得多。
+      </p>
+    </div>
+  </div>
+
+  <h3 data-page-node-id="0mWYVGyP0YoYc8NonLqVIC"><!--pnid:3P4B2YAbYofN8tneavY2fk-->可投的专业与学制（2027 年学院细则口径）</h3>
+  <div data-page-node-id="vhBPcrNbusO8B9qa5bjSwl" class="tbl-wrap">
+    <table data-page-node-id="ozYM2cgY9rlKlXRgklljkf">
+      <thead data-page-node-id="eDFS7mRl5L19WTEmDm7D0Z"><tr data-page-node-id="8aZPAQytmegwhKEbuDZZUI"><th data-page-node-id="WaVVJ8rNt8LcG1nHwQLpm5"><!--pnid:YNFcEUZV2dsrDFwpRmZaXl-->专业代码</th><th data-page-node-id="jLtKuzNQmmA45fGr3QmbfK"><!--pnid:tOAlR3o0KhwVAvoNDrb5aV-->专业</th><th data-page-node-id="eCTRYODggWj1zXTEVRFzia"><!--pnid:X9FEbv7hKk5xdp72IyjOz3-->学制</th><th data-page-node-id="SnO3niuyZvVEAlrcDyhtOV"><!--pnid:cjKCihBEqiK12FU4V8vhC7-->备注</th></tr></thead>
+      <tbody data-page-node-id="nHf8JXBcE6WsYalynrrtuX">
+        <tr data-page-node-id="zPdNY81CdVqu940a4mSfvR"><td data-page-node-id="WRC5670qQbodbiSuZTPWWP" class="num"><!--pnid:qcMJiR45CWavN1F48AG7Ba-->071400</td><td data-page-node-id="L8xwxhWvbZwPWE5AB8pocj"><!--pnid:VND8Wdi8gzRHCvBNPA5W6S-->统计学（理学）</td><td data-page-node-id="o9zFd2vqhCYQflYTdD4wa5"><!--pnid:1mkpqVQ4AkZnrAsL299m5D-->2.5 年</td><td data-page-node-id="t0Hy3IrYLRs1NxLnplMqSV"><!--pnid:S7YY8FERpm0yIbmWfauidQ-->学术向；2027 年拟招 37 人</td></tr>
+        <tr data-page-node-id="p04apOgSi83yEfAKCy4phO"><td data-page-node-id="GIsmD3hB3dDbteK7JBuLMC" class="num"><!--pnid:nYZCQB7U5emVeiYzSCr0Qe-->025200</td><td data-page-node-id="3mYkXZjUadxNxBXoWi1r7J"><!--pnid:mAmP2y5cb5ghwU91k0JQLC-->应用统计（专硕）</td><td data-page-node-id="BQF5ioS6IlgFMDLOMtUzaz"><!--pnid:Y3TzNBMsnV8yPrJn6HuGSk-->2 年</td><td data-page-node-id="HMUqBbPOb0kWYBNZYcI34w"><!--pnid:F0agKlTLL5mdpDgmKTFxDk-->含"机器学习""人工智能""金融科技"方向；<b data-page-node-id="nmXI2wZdAdGC07flXUZHF4"><!--pnid:83kcuuRYtQXGvRPeBf5bHF-->学费 94000 元/年</b></td></tr>
+        <tr data-page-node-id="jyqAvA19x6zF7bSjUu5QLj"><td data-page-node-id="TS9xrLWSpDxVKLxe82WRb1" class="num"><!--pnid:FXSclKRUnWrNvMWvfxpYNr-->020209</td><td data-page-node-id="fYNEfHvwfkKjKJWZNi5MjA"><!--pnid:tcsMImLQMzk8djWcz1ukkb-->数量经济学</td><td data-page-node-id="eB0MyXdO95LN1ishk9caKu"><!--pnid:SfKBq8ArsUJfd80ZrSYCrp-->2.5 年</td><td data-page-node-id="vp8GpOUHCmx5UmzFRNBbGB"><!--pnid:p3MSr8Eh9FpR7uIGj48ZuM-->偏经济计量</td></tr>
+        <tr data-page-node-id="qUuPxi7aw2tj0ddPcvvW7P" class="hl"><td data-page-node-id="aqp7JYL1eH5cgMuelCIKCZ" class="num"><!--pnid:MpcUsdjbXH6rJMMcb8B6bl-->071400 / 027000 / 020209</td><td data-page-node-id="hzoWIIbgGHuAiymtfD0EBO"><b data-page-node-id="ei1Bc338m7EKSPOHOgJXH6"><!--pnid:sqv9XroMQN9hA9JJJ8gDgh-->三个专业均可直博</b></td><td data-page-node-id="aIq7IFBd2owGeZVnteQiQb"><b data-page-node-id="gSKnBByisdhIv9AtUETz4O"><!--pnid:OFhnu1xVrGxUuKe9fwSE8l-->5 年</b></td><td data-page-node-id="g3L0cz32dHFpYice6WyyHc"><b data-page-node-id="IoNzB64K3YGtX6W7XsxmqO"><!--pnid:AnHvey2T3TzE6di1qmGzMK-->2027 年首次开放，详见 09 节</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-page-node-id="uM9qE9BGJbOeJ8WDQOBjVg" class="callout warn" style="margin-top:16px">
+    <b data-page-node-id="C15WGHBns7jDjjNWcvZ7bd"><!--pnid:kEZarM7hWqGORCOjpIfdLb-->学费这一条要提前算：</b><!--pnid:q65jvzsqV3oGUAZkjmtNS2-->应用统计专硕 9.4 万/年 × 2 年 = 18.8 万，而学术型统计学 8000 元/年。
+    在"保底"和"花钱"之间，这不是一个可以拖到录取后再想的决定。
+  </div>
+</section>
+
+<!--pnid:39Rkwa6iSEHehWONoGozbG--><!-- ============ 9. 直博与资源 ============ -->
+<section data-page-node-id="fnkrYn8zAPFTnsXfc7AShd" id="phd">
+  <h2 data-page-node-id="oEG3DbMM6HDYzBfEMUyoyL"><span data-page-node-id="p4K1XaxYYeIhnDphSnGez8" class="num"><!--pnid:DqqH6bHu3fQNXjhkoaccwn-->09</span><!--pnid:MwA2gSwK2ZKwlEP6yJFMFH-->被低估的两条路：直博，和两份能报销的补助</h2>
+  <p data-page-node-id="Nl55yDunPaOG9eQy64PePy" class="sub"><!--pnid:HGtEjMDLp4Lrbe8R8leaaY-->这三项都不在"通知公告"里，藏在学生事务栏目与学院内部登录区，所以绝大多数人不知道。</p>
+
+  <div data-page-node-id="iB5N829c1wjVGDt2q1MVVg" class="grid g2">
+    <div data-page-node-id="AfpVys3OEYi2baDMbH5wKp" class="card" style="border-left:3px solid var(--ok)">
+      <span data-page-node-id="Ia3QLyeNQ6Ow4c6i4sB9cb" class="tag t-green"><!--pnid:3kkA5PoAP9wkePsZJI5lsc-->通道 · 直博</span>
+      <h3 data-page-node-id="GSi1FEpKOwVFhz1qDgL9DS" style="margin:10px 0 8px"><!--pnid:8eLtOiLVLYyU5pDR5slLxQ-->2027 年首次开放，竞争者更少</h3>
+      <ul data-page-node-id="eAIFoYnUA9jmGNnrwLG16f" style="padding-left:18px; color:var(--sub); font-size:14px; margin:0">
+        <li data-page-node-id="DdSBVU7Hhp82scSHsaousp"><!--pnid:xfDGUe3sHxKDbtAPDPF9VM-->三个直博专业：<b data-page-node-id="iaQWxQkdQdsJ8BerNHFLU0" style="color:var(--ink)"><!--pnid:Ajkliy51iKHKponb5pBPgJ-->071400 统计学（理学）、027000 统计学（经济学）、020209 数量经济学</b></li>
+        <li data-page-node-id="PiExz1EqrG5pEV918TTrJ4"><!--pnid:aEDd98CCbpAps1cDbTES1Y-->学制 <b data-page-node-id="M8jLw3yQKKSmC52QmOzqXR" style="color:var(--ink)"><!--pnid:LtS51hwNC0xKC74OHyufe1-->5 年</b><!--pnid:OFtLKlDYDVInVMZZSDdH6S-->，本科背景要求统计、数据科学、经济学、计算机或数学类——<b data-page-node-id="KHIa0y0iynyxTElr5hH15b"><!--pnid:vjPUdmzpFNc6s4JlPANCFa-->人工智能专业对口</b></li>
+        <li data-page-node-id="Y0izIp78FwbL7jaPD3oQGg"><!--pnid:SLnD1E6tDGRrvtmJh23oh8-->逻辑：申请者比本硕少，且导师更看重"愿不愿意做研究"而非"排名多高"。
+            排名中上游但不甘于内卷的人，这条路的投入产出常常优于硬冲外校。</li>
+        <li data-page-node-id="uSSwTrWcXi09evDaoQpWUg"><!--pnid:Rdkgduunf8vpxT7qvax5nZ-->代价：5 年绑定，中途退出成本高。要想清楚是不是真想做研究。</li>
+      </ul>
+    </div>
+    <div data-page-node-id="2vr1WyNJnpvWyy8a5Is9Vs" class="card" style="border-left:3px solid var(--accent)">
+      <span data-page-node-id="KOKhFAG9ThSu0izxFgm7Vm" class="tag t-blue"><!--pnid:WvQUTKZjSnlYgSR8HXTPqO-->细节 · 复试与确认</span>
+      <h3 data-page-node-id="IFmW5B8tdfzErjhKgswbbe" style="margin:10px 0 8px"><!--pnid:a9nvwWr2zrMR2xOOh5p5eF-->现场复试，只有两项</h3>
+      <ul data-page-node-id="SYKuPJ6gfilUpnU7hTcJyT" style="padding-left:18px; color:var(--sub); font-size:14px; margin:0">
+        <li data-page-node-id="BypywFkoM4pjydLnHfapyF"><!--pnid:F3ewWjWPRDvOF4HWXnKGmU-->形式：<b data-page-node-id="FIck3mNmpcCZAtrwJa7jjM" style="color:var(--ink)"><!--pnid:4Jdw4eXAr97StS6dvspc0S-->现场复试</b><!--pnid:FwejXwUKJDWwsCGJP4Z3gj-->，不设线上</li>
+        <li data-page-node-id="m9Wqd7gvpGYzs3vlCdisFo"><!--pnid:E9UHYcXU1iR50i1FCJmBKb-->内容：<b data-page-node-id="UVCg4Zddw2CztIWoGeJk3W" style="color:var(--ink)"><!--pnid:PmLUY7epFNmEh3Ry1vfMGy-->外语能力测试（听力 + 口语）+ 专业课面试</b><!--pnid:vwCtU1wEWAPkLO2k0L06Ce-->，考官独立打分后取平均</li>
+        <li data-page-node-id="c6P2d4sGAP2rOpote78aQo"><!--pnid:V0yAYJ25Lt74nFu2MdEhiY-->材料：需提交 <b data-page-node-id="sNqbkPCfNXQi7f5OuDzC54" style="color:var(--ink)"><!--pnid:q4sXmjZe6n0wg8Pbed6bkV-->第 1–6 学期完整成绩单，加盖教务处公章</b></li>
+        <li data-page-node-id="6m2YhNGkgL2GOdQojHqXy1"><b data-page-node-id="W6sBgBAfxjjA3JwFQlVe8P" style="color:var(--danger)"><!--pnid:yKHzPpUyxmCyISaTeus8qa-->收到复试通知或待录取通知后，须在 24 小时内在系统确认，超时视为放弃。</b><!--pnid:BexAMt9w6iIzMD9jtyDtQq-->
+            这一条比推免系统的 48 小时更紧，别按 48 小时规划。</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 data-page-node-id="e4jvuFBA3Mgj2o0H22rAMt"><!--pnid:Tqnok1joR6VjNB7uyD47iW-->两份可以直接省钱的细则</h3>
+  <div data-page-node-id="fRu3CEFoOQ2rAenQWAqQAW" class="tbl-wrap">
+    <table data-page-node-id="JPTzC9ASuIri74btITonmS">
+      <thead data-page-node-id="N1H69Me8fiSwlKtFp7cJ4p"><tr data-page-node-id="ljt88BiHnYujChGwzfoEqi"><th data-page-node-id="IinWamPlv9FZQJqH4iTrde"><!--pnid:uE1XO56q5mQ3Jx429hBb0M-->文件</th><th data-page-node-id="gFYEh9SJ7nwdDFVOybb5vE"><!--pnid:CyzQuXnLYhzQGDu2yto45f-->施行时间</th><th data-page-node-id="jBvX4Z1ytRvHMjSj1tGxrD"><!--pnid:FclWl6yatq1nECbGZw6X4m-->内容</th><th data-page-node-id="rY0CzAzUfASGfcvxnXvWLr"><!--pnid:XiItSemtCzfdd1RQGKc6mP-->前置条件（关键）</th></tr></thead>
+      <tbody data-page-node-id="QmSc2XOGj3kL444ejKgn0q">
+        <tr data-page-node-id="QbTdCMYbOYukyA0zp869mq">
+          <td data-page-node-id="dCYV5gZhNIu6uQkbVF6HZo"><b data-page-node-id="D2tYXpaJEukIcVnDd6HfTs"><!--pnid:ckgxk7FWmCHLuHtqkzUuJz-->《学生参加各类学科竞赛补助细则》</b></td>
+          <td data-page-node-id="MDoPmgh0ync1XAt9nu7Jqg" class="num"><!--pnid:nXa53J2ZmgeX716qszGfTJ-->2025.9.15</td>
+          <td data-page-node-id="79R8kmgz2bX70gHAuD2ha2"><!--pnid:U5HDXn5l89bTGrhK9uM1cA-->参加竞赛的交通、住宿费按差旅标准实报实销</td>
+          <td data-page-node-id="UcwmbOvL3Qz1O8Ha6hPhfe"><b data-page-node-id="aQNNgkvQxqPccPq6QUsQIp" style="color:var(--danger)"><!--pnid:dECnQvaChJUDOO6UlvQZ4L-->必须事前填写审批单，并由指导教师签字。未审批不予补助，事后补不了。</b></td>
+        </tr>
+        <tr data-page-node-id="hiMuLUIDGZJrLKivFGKjHB">
+          <td data-page-node-id="1W3aNvxSXk6YmctPzmaJ0x"><b data-page-node-id="NbnnnefqZmgaqpKftWBHE3"><!--pnid:qkF1SMiczMn3oMkL01eVp6-->《关于补助学生参加雅思、托福考试的实施细则》</b></td>
+          <td data-page-node-id="Tr7wKJFTHDhwHHNfFRYh3S" class="num"><!--pnid:gbFrW6l8I8KHCKPN1XwZA5-->2025.12.10</td>
+          <td data-page-node-id="aJfh92HlepQf9ix04Kpoim"><!--pnid:zpBlqq0MKbDhoePdSqnNxF-->报考雅思 / 托福可申请考试费补助</td>
+          <td data-page-node-id="kEtPlIgYlzHuH55SPQgRqv"><!--pnid:LgH5znRXvwRm0Yz9mz9YQI-->按细则要求提交成绩或报考凭证</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 data-page-node-id="U3IwW0NnEJaL8IUAFWjRkN"><!--pnid:jskCTWg1kcRgV3xXq9Q9BZ-->还差一份文件：学院遴选细则去哪拿</h3>
+  <p data-page-node-id="2cCdM1O476opsv7uxAq5n7" class="sub" style="margin-bottom:14px"><!--pnid:UYJRSQrzC9Zsa3Und2QXaT-->
+    决定综合成绩权重的那份《统计与数据科学学院推免遴选工作细则》<b data-page-node-id="7xycKrExOmUaioiQXJOZ0S"><!--pnid:BAzUqWhnmsd1Gti2QIgRCY-->不在公开栏目</b><!--pnid:U3YIYHmvHMfflP3RmZXK6F-->。
+    学院站内"内部登录"下有三个子栏目——内部通知、会议室文件、学院文件，细则应在"学院文件"中，需校园网账号。
+    这是一个可以自己解决的动作，不必等人转达。
+  </p>
+  <div data-page-node-id="W2k6tcgTYdRMgqchhgJseA" class="grid g2">
+    <div data-page-node-id="xIIw5Z2bNiAnamYb1qhalU" class="card">
+      <h4 data-page-node-id="qx94O85Gx9flbzTIT2KTkU" style="margin-top:0"><!--pnid:IRRPfhsk7vH7XKATVwoBT8-->获取路径</h4>
+      <ol data-page-node-id="mpX2OUgD5xuMFTmlJMyWux" style="padding-left:18px; color:var(--sub); font-size:14px; margin:0">
+        <li data-page-node-id="dhb1zkE3PVqHu6fB0TsKwq"><!--pnid:Tupo0ACnZpmxi4cDzFemyd-->校园网环境登录学院官网 → 内部登录 → <b data-page-node-id="Xkxw8rw0w8vSgfdzE6zmVk" style="color:var(--ink)"><!--pnid:ROqEOh2ldNmZzBivYxqRim-->学院文件</b></li>
+        <li data-page-node-id="ljqn1P23LRcptNKjsDbTf1"><!--pnid:VkmjLI0QzkpZSPHdsZjFaZ-->搜关键词："推免""推荐免试""遴选""综合成绩"</li>
+        <li data-page-node-id="yCWD7yWo6jssJIX7XXTuP2"><!--pnid:i1acvsMEWluuX2jlkKCmrU-->找不到 → 联系公示上的学院联系人 <b data-page-node-id="PvNHbJSNxIzr89siHbGBtq" style="color:var(--ink)"><!--pnid:jxLLjvhLYwo7nHBdR6nkQt-->李瑞囡</b><!--pnid:Ek4teFMqOf4Y1crsBKDsGm-->（ruinanli@amss.ac.cn）</li>
+        <li data-page-node-id="iMZAwZMzffPEar6Z9lAkxS"><!--pnid:kzmPsfBih635QssYPQEazz-->研究生招生口径 → 学院 <b data-page-node-id="VeKC6S7sbhDEhX8ezvwSKA" style="color:var(--ink)"><!--pnid:6zwPJgHwzPfVUg2C8Vv9uC-->杨老师 021-67703860</b><!--pnid:K0zb2fCsFy8cKzXhy7ARmW-->，statistics.phd@suibe.edu.cn</li>
+      </ol>
+    </div>
+    <div data-page-node-id="BghRP4XQlAB1QbsFtg6wDB" class="card" style="border-left:3px solid var(--danger)">
+      <h4 data-page-node-id="NQaRv3DelEad2WsHSK1bWh" style="margin-top:0"><!--pnid:1fiue0EjhUnIF3Fdqwirvk-->要顺带问清的一个矛盾点</h4>
+      <p data-page-node-id="XlZcHMqg0nhcpLDPHycLZa" style="color:var(--sub); font-size:14px; margin:0"><!--pnid:rQfFsX0GBSjyorineUCNAB-->
+        学院这份公示引用的是<b data-page-node-id="VBXvVZKdH46BFRZ61w7yKb" style="color:var(--ink)"><!--pnid:iVC57dlItErbJCuEWCME7X-->沪经贸大办〔2022〕66 号</b><!--pnid:G1a2EaqF3icGraQC9nLh3l-->，
+        而会展与传播学院 2027 年度细则引用的是<b data-page-node-id="NhQPIiuD1P0Yw84PhfbRPe" style="color:var(--ink)"><!--pnid:O555SB6ifgjAGq1wU4DJG0-->〔2025〕132 号</b><!--pnid:eMg8G5fY8walgcoVVTQbRn-->。
+        <b data-page-node-id="cn1GPB93APDmRnlvvraRZi"><!--pnid:xKxoTihAsiKAsMdfIMQM5q-->两个版本并存，综合成绩构成可能不同。</b><!--pnid:bu9YMprEBuOio1iS1pHp0u-->问一句"学院本年度执行哪一版"，比抄十页权重表更有用。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--pnid:hMZDqyKUenX3e8yuNRHO9l--><!-- ============ 10. 本月动作 ============ -->
+<section data-page-node-id="Xn6M27SULaNUyhCvAir9f8" id="now">
+  <h2 data-page-node-id="95WDFBWbDAVJ4NZaVUZNff"><span data-page-node-id="JbzM5zECpiqlWGJuB1Qle9" class="num"><!--pnid:NIhjRJJKYonBd3xFZQDEj8-->10</span><!--pnid:q257qQulWKdFpaw5EJGcQD-->本月内要完成的 8 件事</h2>
+  <p data-page-node-id="LuAWXLGkJiaHyBNWgJ9aeR" class="sub"><!--pnid:xaj6HiHe482s91f75iRlBL-->2026 年 11 月前完成。这八件不做，后面所有规划都是纸上作业。打勾状态存在本机浏览器里。</p>
+
+  <div data-page-node-id="U1ngPc9eVHqmn2zJobcCA3" class="card" style="padding:0">
+    <ul data-page-node-id="eUcKZp213sNEr5fdauZBQl" class="check" id="ckNow">
+      <li data-page-node-id="fHJ0Yc7Cet0bPSrJBXWm0Q"><input data-page-node-id="t6jRK6SxrooPSrO0X69qbb" type="checkbox"><span data-page-node-id="1QSJFNLNaTDjQE0irGqCrb" class="txt"><b data-page-node-id="8MHlnvNgxkCc9wsQl13N9L"><!--pnid:qpnv8RwqxPBiuAHRSOHIvh-->拿到前三学期专业排名，以及人工智能专业的实际总人数</b><span data-page-node-id="vUJCkgEdXQXnRc4FcIaKMq" class="why"><!--pnid:8FeZvdqJFP85rmdrKQbaWV-->两个数都要。"我在 AI 专业 XX 人中排第 X 名"。拿到人数后用 7 ÷ 人数，就是你的保研概率——2027 年度 AI 专业只有 7 个名额且无候补。</span></span></li>
+      <li data-page-node-id="oyWnmQb6oqOg5yRhfx6TBe"><input data-page-node-id="vDLT656OtwWtin97QhizKI" type="checkbox"><span data-page-node-id="MUHSR39FpxjInpC7AnGxlE" class="txt"><b data-page-node-id="mtYOgooYk2cYb1DLsVOXLG"><!--pnid:6KhxkbLZuNcrGqOrRrpaJN-->登录学院官网"内部登录 → 学院文件"，找《推免遴选工作细则》原文</b><span data-page-node-id="LRYqQo4MSBakZJxa6xGnbD" class="why"><!--pnid:qs5DBZMnEiTRPBU056JfXj-->公开栏目里没有。需校园网账号。找不到就问李瑞囡（ruinanli@amss.ac.cn）。重点抄：学业/科研/全面发展的权重、科研创新计分表、竞赛认定清单。</span></span></li>
+      <li data-page-node-id="gcBrVKmMwW3xQENG7wKz3B"><input data-page-node-id="UL0M4ei1RFKmiwHRUUMHLs" type="checkbox"><span data-page-node-id="h1jWmzdrErm2J7ifj4Hitd" class="txt"><b data-page-node-id="z0BScX4xiPTCAygOGDKHhB"><!--pnid:EcYFWYn1Ryw3owkgH6qwUk-->问清学院本年度执行哪一版校级办法：〔2022〕66 号 还是 〔2025〕132 号</b><span data-page-node-id="eHt9mk4tUkttePqAbTiafd" class="why"><!--pnid:n40sOjFd5SQ91gnifXdqS2-->学院公示引用 66 号，会展学院 2027 细则引用 132 号。两版并存，权重构成可能不同。一句话就能问清，别自己猜。</span></span></li>
+      <li data-page-node-id="SsQsBkh3XJscMRn6IOcgI1"><input data-page-node-id="CRxjuZUccUnD2F9VeqddDW" type="checkbox"><span data-page-node-id="dbcoH8VpOQDjZQic34v3pa" class="txt"><b data-page-node-id="gSkkmg25DBPaYwkfp3bvSs"><!--pnid:SrweF73ZrMem7fZKNy9KKp-->核实"必修课无补考"这一条是否满足</b><span data-page-node-id="k1V6BpbKXnZ4c304q49Mzi" class="why"><!--pnid:Uk7B9Io0rGnZCQBOEEutO2-->一票否决项。大一大二若有任何补考或重修记录，现在核实，比 2027 年 8 月答辩时才发现好。</span></span></li>
+      <li data-page-node-id="ymotwXgrYn8AqzgxGTy8pY"><input data-page-node-id="RKrSu6eMYTJ5Xb0m5OrxbF" type="checkbox"><span data-page-node-id="rSDOS4KQWawrkypCEyZSyu" class="txt"><b data-page-node-id="MROHjCFSGBsFBEEatdbNpa"><!--pnid:GBnA7Z9tYYhjK80lz4QY5Q-->决定科研创新那 20–30% 怎么拿</b><span data-page-node-id="bALIo6f79diNSznmgghqn6" class="why"><!--pnid:K7pi59maxcVwsmiJETeZSH-->三选一：① 把已有项目写成可投的核心/会议论文（需导师带）；② 打一个清单内的全国赛（数学建模、计算机设计、统计建模）；③ 接受这部分空着，靠学业与全面发展补。三项投入产出差很大，必须选一个，不能两边都想要。</span></span></li>
+      <li data-page-node-id="vQbqzhrRE614jYI0vInohl"><input data-page-node-id="ZiQThqLA7V4VjnVipJWSTB" type="checkbox"><span data-page-node-id="rM6VMxejGub2baRDyoNtGZ" class="txt"><b data-page-node-id="zTtYR6gOr5Y54DlHD101Tr"><!--pnid:wrc9R9sD65v0WjiLO7YyOL-->评估直博这条路要不要留</b><span data-page-node-id="kE0VheCK8mbM4F8HFodYDD" class="why"><!--pnid:SPuui2mykVF7Vex3RAswd2-->2027 年学院首开直博（统计学理学/经济学、数量经济学，5 年），AI 背景对口，竞争者更少。如果排名在专业 8–15 名之间、硬冲外校无望，直博可能是比"本校专硕 18.8 万学费"更优的解。</span></span></li>
+      <li data-page-node-id="pU7lDQuKIBioWvi4fBOEi2"><input data-page-node-id="9713FNmQBi9IdB08kk87bd" type="checkbox"><span data-page-node-id="Ums0aBji4Gl9MYx9jmNQBO" class="txt"><b data-page-node-id="CkTMU0E9emBcxBJTgrf1TH"><!--pnid:mKrCLYqfOc9xGt55uSWgxf-->确认 12 月六级是否要考，目标分定多少</b><span data-page-node-id="9jJaw47Z15oCInXgVUPugZ" class="why"><!--pnid:8oxT0syUwC546K69HTuypV-->若已 500+ 可不考，把 12 月还给期末（期末直接影响排名）。若低于 500，这是大三上唯一窗口。</span></span></li>
+      <li data-page-node-id="GOwmNqQtHOglhEX5mQBA41"><input data-page-node-id="xLGQxjfuFoZjoID7YnYKH3" type="checkbox"><span data-page-node-id="Q5Xr1f1uNUhzJyyP96sfJT" class="txt"><b data-page-node-id="P1XndwvxNHs51KkLkbNHjJ"><!--pnid:VpjHZWZhq5nOsjVVurngWV-->把"竞赛补助需事前审批"这条规则记下来</b><span data-page-node-id="7AGMRtVArp8d4Po9YV1t4w" class="why"><!--pnid:SOj1K94VlJLPELB0sXRxcc-->《学科竞赛补助细则》要求事前填审批单 + 指导教师签字，未审批不予补助。2027 年打比赛前先走这道流程，别打完才知道报不了。</span></span></li>
+    </ul>
+  </div>
+</section>
+
+<!--pnid:Oxb3WHqU4uP7WP82VFlsLP--><!-- ============ 9. 风险 ============ -->
+<section data-page-node-id="6BRyUKxe90o1zPf17IrPRP" id="risk">
+  <h2 data-page-node-id="NuTMjvRvyY4TDwfwujpos9"><span data-page-node-id="Y8gz5oZNEe2apUloQ91viF" class="num"><!--pnid:JFhButN6V0DwmUfDbvANPZ-->11</span><!--pnid:8ADzuuBy5KPV07VFMFf1v4-->风险与 Plan B</h2>
+  <p data-page-node-id="EqiTKCg0Lwbjx5Kut8Kib8" class="sub"><!--pnid:o8cgZr93oxPpIVx2RRAGBs-->按发生概率排序，每条给出触发条件与应对。</p>
+
+  <div data-page-node-id="tOuPUF5szZfjsopNV4BhMX" class="tbl-wrap">
+    <table data-page-node-id="9PGNx6Aj4PLGCLGIcqT7lk">
+      <thead data-page-node-id="FJ3lqqLiy7IF91zMMykQXF"><tr data-page-node-id="vPthy6Mv3YPDbi6tvWDq4I"><th data-page-node-id="hWoETyahBl89uiQ6htfLe8" style="width:200px"><!--pnid:qOM1H7r6fDd43yqW8JdSPi-->风险</th><th data-page-node-id="pQ5PJOjsPVAIU8HPcc1wrj" style="width:110px"><!--pnid:872iUtD3TD5RkYikuim7fW-->触发条件</th><th data-page-node-id="vgtR2O1bXVhpgfdO8axs8s"><!--pnid:HWx1BrsGA4WVo8IB9xQhlb-->应对</th></tr></thead>
+      <tbody data-page-node-id="qXJIF0VIt9IGYY3UJnMl6E">
+        <tr data-page-node-id="qTQ95UhFd64MTKsgu9IFK9">
+          <td data-page-node-id="GJph9VQNM4U2Aqw1HYtBYN"><b data-page-node-id="QFFdsZ3lIWisatNEH5Xbtr"><!--pnid:3nPQPTJg7MN7siBkQSO4cI-->排名掉出前 10%</b></td>
+          <td data-page-node-id="pDOTVgTkL0RaJNUZeoec4y"><!--pnid:J4ECexdAf8HcLVrNpRtyXJ-->2027 年 1 月或 6 月自查</td>
+          <td data-page-node-id="KmjeFkKc6M81XGGcTWNf9m"><!--pnid:WEb7xe6KtVbvcL3bOVTtyz-->211 那一层整体关闭。立刻切换双轨：<b data-page-node-id="mzP2txfz2RAcHDuEYMpfIK"><!--pnid:6ZZEo7RXRKDDO6E9K7FsFh-->本校推免 + 考研并行</b><!--pnid:pXqRLnr9nD7Fs4Kz687M1n-->。考研目标可高于推免现实目标（统考不看本科背景），但要在大三下就开始数学与专业课。</td>
+        </tr>
+        <tr data-page-node-id="oT28KAWMmgOqTHh0E6UybQ" class="hl">
+          <td data-page-node-id="oYLrs96xDfGqlkgia8Bjpt"><b data-page-node-id="qMZVcCnoqQzNx5PDc5T6tD"><!--pnid:e6BbQTQh9AimaFWH1I0Fkd-->卡在专业第 8–10 名</b></td>
+          <td data-page-node-id="ILMKWezZ19mxohzH6rY9s2"><!--pnid:weR18mgmPTpfJD3r0htdCk-->2027 年 1 月自查后</td>
+          <td data-page-node-id="SCrLu0J2HFlOaFfNZBaWfP"><!--pnid:tXXy2VI1Dhw4G4OmkFAYUG-->这是最容易被误判的位置：百分比上像"进了前 10%"，但人工智能只给 7 个名额且<b data-page-node-id="DOoCqnYKjCeFPH89J1aros"><!--pnid:S2WJWM5VF70xUiewZBnF5r-->无候补</b><!--pnid:P4ZTUUpsbDCtYeC3n6HNmg-->。
+              两条现实出路：① 走<b data-page-node-id="IkTDR5F7FiuTSKl8KPfxnj"><!--pnid:M1Se41ULgHRdHnABGn3Qht-->直博</b><!--pnid:vhCqCyw8WyDZMULCq7Kzdt-->（三个专业、5 年，申请者少）；② 把重心转向<b data-page-node-id="C0DcbW6FgRYNJV1welOIp8"><!--pnid:rqT9VuSUXf5E2pmJQ4egV5-->外校预推免</b><!--pnid:XIk2iNuW2tmuddvYdDLceH-->，
+              用项目与竞赛成果弥补排名——但前提是你仍然拿到了本校推免资格，所以这条路也要求冲进前 7。</td>
+        </tr>
+        <tr data-page-node-id="eeQNGvOmApFuYDtEEz0lQy">
+          <td data-page-node-id="N04Mje9tusTiOmSF7GkAmZ"><b data-page-node-id="im5Tiz56Rm0FAaiYsb7IAx"><!--pnid:ikSdqGT1pZtMG3Lv8GoabU-->夏令营全军覆没</b></td>
+          <td data-page-node-id="RfEuWi2UE6xTnGp7xkLXL8"><!--pnid:wB3BnhAnfwpPr1DLl3NRNn-->2027 年 7 月底</td>
+          <td data-page-node-id="lTm8GP9GIn90MnW6SJcdoZ"><!--pnid:JMO7z9lQi6xTT8mms90TBo-->属可预期情况，不是失败。8–9 月预推免是双非主场，重点投上财、东华、上大、华理的预推免批次，以及本校。此时材料已备好，只换投递对象。</td>
+        </tr>
+        <tr data-page-node-id="n3LA0kRySmMSaAMySZhDGZ">
+          <td data-page-node-id="kgFlZTJl7i82RWOtvG4wxP"><b data-page-node-id="ebRX5C7emf5OqdJh5TyNSq"><!--pnid:idmHmUJzNw3k3n0qUBQT53-->拿到营员但本校资格没拿到</b></td>
+          <td data-page-node-id="qLfiVmzAGZd490Ir9FlT28"><!--pnid:a3QWww3eGFARfLizUHoMdy-->2027 年 8 月下旬</td>
+          <td data-page-node-id="5M2pEmAa0MgS4zVprT2gOc"><!--pnid:CCqfBJ8ulPQ1UMLBQAaYCT-->所有外校 offer 作废，这是最惨的一种。防范手段只有一个：把校内遴选当成第一优先级，8 月申报材料按最严标准准备，不要因为在外地参营而错过校内截止日。</td>
+        </tr>
+        <tr data-page-node-id="F696z9wR4ZlfsE0mSqB0aQ">
+          <td data-page-node-id="wBmvmYjaMJHmNCsSojIIg2"><b data-page-node-id="tCJ0YNI7ieyCdrefe5KwJY"><!--pnid:FiCZkYwU4q1VSIXu3qixbY-->论文/竞赛来不及落地</b></td>
+          <td data-page-node-id="Ttz1lJLLJHJzioJlq1q6ce"><!--pnid:NKxQeUYXOHC8kuCGxhcthv-->2027 年 6 月</td>
+          <td data-page-node-id="ovFeXuGnViHTxRboZGnCZB"><!--pnid:5kmFiQtXRvHPcTtt5fMeXl-->校内遴选不认"已录用待刊"和"在投"。若 6 月还没落地，放弃这条线，把时间转投学业与全面发展分，不要在 8 月答辩时拿半成品去碰运气。</td>
+        </tr>
+        <tr data-page-node-id="OuRPiGuX1toAmOuG9on7lB">
+          <td data-page-node-id="n7TXTyQFEDIGp7YeG9NUbR"><b data-page-node-id="sWeSLwQLSFt5cX0NbIg2FF"><!--pnid:1xBpzgvMlZZXP7iaJlINiB-->出国与推免冲突</b></td>
+          <td data-page-node-id="rjiz8pjiiw3GTERATl6LIc"><!--pnid:49idpxtXqkN9mKN3R28xZB-->任何时候</td>
+          <td data-page-node-id="oOAHHCbaOcvTYffMltPEeN"><!--pnid:z7DYl7Rv0LcpZdgljTkk1K-->SUIBE 细则明确"准备或正在办理出国手续的学生"不在遴选范围内。若两条路都想走，必须在大三下做出唯一选择，不能拖到 8 月。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div data-page-node-id="MEyF0M2Esjfd0YBcSVhEGY" class="callout" style="margin-top:18px">
+    <b data-page-node-id="2omKWzYaYFv5wgartIvGus"><!--pnid:7Y688r4wc2CwiCPPUBpc3w-->一个不该忽视的备选：</b><!--pnid:A5DcwvoYt8Kn29EXICO7kl-->你的项目经历（CalmMind AI、飞轮智能体）在就业市场上比在保研评审桌上值钱得多。
+    如果 2027 年 9 月两条路都不通，秋招时这套东西能直接对标 AI 产品/算法工程岗。
+    <b data-page-node-id="mo0EiEHTkiRXeqJHv58nZE"><!--pnid:10j4wOSn5aoEVh4TWKVGVG-->保研不是唯一出口，但它是唯一一个要求你在 8 个月内把排名和成果同时做到的出口。</b>
+  </div>
+</section>
+
+<!--pnid:8fh3ZULU5YWHDk7qGV7tff--><!-- ============ 10. 口径 ============ -->
+<section data-page-node-id="hKIq0GkeDLTBh2OhV7gVrs" id="src">
+  <h2 data-page-node-id="VIwmmen2tcyXXNjUfnqiJh"><span data-page-node-id="PaXvLKYNbzrrU8NT7F0g1b" class="num"><!--pnid:waHce95m0l4Q28xEF7rNdZ-->12</span><!--pnid:oOqdDGDS6FkKR2gNQrY1R7-->数据口径与需二次核实项</h2>
+
+  <h3 data-page-node-id="DGa2N3SKpVyymkwYZ5uY5l"><!--pnid:EHmRzMSzbfKIj6drmW549I-->已核实（官方原文）</h3>
+  <ul data-page-node-id="0slKwNR4P2ywUFyZof3WY4" style="color:var(--sub); font-size:14px; padding-left:18px">
+    <li data-page-node-id="Chtu03H5t7xsLtIMbwCqGq"><b data-page-node-id="p9NfqjQGMVH7ym1l21KDcB"><!--pnid:EXVyVvBOmg3jBFvOG89K0r-->学院 2027 年度推免遴选结果</b><!--pnid:Pi8MTx0642wbSiDpl3H4OI-->——正式 36 人、候补 8 人（第 37–44 名）；分专业：应用统计 11+5、人工智能 7+0、数据科学 7+2、经济统计 7+1、信管 4+0。来源：《统计与数据科学学院 2027 年度推荐免试研究生遴选结果公示》，2026.8.24–8.30。原件：<code data-page-node-id="6oG3r9NEwRQnK9lfH083Mx" data-pnid-children="HSH9Pc0hTh1ebN8zFcXymN">官方原文/统计学院2027年度推免结果公示.pdf</code></li>
+    <li data-page-node-id="X3FiBwUUhcutxAJnqxOuLX"><b data-page-node-id="hVkSm0wMLf5HpWOdSVakcx"><!--pnid:G7wSZgwUtWEFItevDh6H0j-->学院接收推免实施细则</b><!--pnid:q2Gv5FCIK3fVB91vuPxwrv-->——三个硕士专业学制（2.5/2/2.5 年）、三个直博专业（071400、027000、020209，5 年）、本科背景要求、现场复试（外语能力测试 + 专业课面试、考官独立打分取均值）、24 小时内系统确认、需 1–6 学期成绩单加盖教务处公章、联系人信息。原件：<code data-page-node-id="aD2XN0loZVkKA8Xt2PIefK" data-pnid-children="eV1rGntz2UadbwYMMwfs6U">官方原文/统计学院2027年接收推免实施细则.pdf</code></li>
+    <li data-page-node-id="CtrYDVQvNpwLDaUcu1Nk4V"><!--pnid:6mgNyv9Yj5SsjAPS1y2C13-->SUIBE 推免资格条件（六级 426、必修无补考、绩点 3.30 或前 15%）——会展与传播学院 2027 年度实施细则、会计学院 2025 年度细则，两处口径一致。</li>
+    <li data-page-node-id="wIua30iD8voFHOJ2avH18N"><!--pnid:9AKft81um52RNk139bQwOY-->SUIBE 综合成绩权重（各学院不同）——会展 2027（10/50/30/10）、国际经贸 2025（10/60/20/10）、工商管理 2022（10/60/20/10）、会计 2025（10/70/10/10）。</li>
+    <li data-page-node-id="RMPcnU33on5qLJFkGiCjyR"><!--pnid:Yq1o5JOPNgHQLdSumDr6Nr-->SUIBE 遴选程序与时间（8 月中旬申报 → 8 月下旬答辩公示 → 9 月上中旬校级公示）——2027 年度公告与校级办法。</li>
+    <li data-page-node-id="KbUks6BM50FWpZYYcNhQzQ"><!--pnid:rmOvrHTF2wpvucoWX4v2nb-->2027 年推免系统节点（9.18 注册、9.21 填志愿、9.22 复试通知、9.24 待录取、10.18 截止填报、10.20 截止确认）——研招网推免服务系统。</li>
+    <li data-page-node-id="flDoDg1CDpPq4bkll52Bas"><!--pnid:Ghqwaxza7KAxl7HuQVfIeF-->复旦计算与智能创新学院（前 20%、六级 550 隐性线）、交大电院/自动化（双一流限定、前 30%、CET6 425）、同济电信（未限双一流）、华师大计算机（前 20%、60 人）、上财信管（其他高校前 10%、不限专业、7.1–8.20）、东华信息与智能科学学院（未设百分比、100 人）、华理信息学院（双非前 10%）。</li>
+    <li data-page-node-id="XADFqGJXWhENhljlLf0NiM"><!--pnid:mjX0b2kRSomao3vB7UGthG-->《学生参加各类学科竞赛补助细则》（2025.9.15 施行，事前审批 + 指导教师签字）、《关于补助学生参加雅思、托福考试的实施细则》（2025.12.10）——学院"学生事务相关文件及通知"栏目。</li>
+    <li data-page-node-id="160bePQpIzjvd8GqhH6wIg"><!--pnid:DVpus4YoVUs9Tm9OCUt3V1-->SUIBE 2027 年推免拟录取 32 人及分学院分布（统计学院 1 人）；应用统计专硕 94000 元/年。</li>
+  </ul>
+
+  <h3 data-page-node-id="dhNOgdzOPZXgAS2IQCb8W1"><!--pnid:rUuiOimb63rAsTEErzbhIV-->需你二次核实</h3>
+  <ul data-page-node-id="hME4zOzDx0nOmrhGrG8VJG" style="color:var(--warn); font-size:14px; padding-left:18px">
+    <li data-page-node-id="yIoEEbFIGsbDsjjEneLzKf"><b data-page-node-id="VqXFtAKqhZlIrKyTBF14VT"><!--pnid:pjpsj4PioB7mgy85Ozz7rC-->人工智能专业的实际在册人数</b><!--pnid:c0oaef9rmgSkf4egv8SoMR-->——本文的 7.4% 是按上海招生计划 94 人推算，不是真实分母。拿到真实人数后，用 7 ÷ 人数 重算。</li>
+    <li data-page-node-id="FgEhyr0F93EaVWgn61NWLv"><b data-page-node-id="KxaibGveRwfFD7Sp6lPIYU"><!--pnid:OxI2dX779NvVHz6DTFk2O3-->学院推免遴选细则的综合成绩权重</b><!--pnid:JmTorMvwwVOY0mIQk0enUb-->——原文在"内部登录 → 学院文件"，公开栏目无。这是影响最大的一项未知，决定你把 8 个月押在绩点还是竞赛。</li>
+    <li data-page-node-id="dbHmdjrr9ZSaEynTYATCEs"><b data-page-node-id="16flzfJZBMhZzNXR5b14d5"><!--pnid:WWKeXvPtttqMOsDM8tVVNl-->学院执行哪一版校级办法</b><!--pnid:HgVHtNwsUSUE3dFDGIgaFE-->——公示引用〔2022〕66 号，会展学院 2027 细则引用〔2025〕132 号，需确认。</li>
+    <li data-page-node-id="CgbOPfKgaE8Ikvmuuz7tt6"><b data-page-node-id="NaFcAl6WurqkFxDpoETgva"><!--pnid:H0sGbKX2JqvXRpmpiofljv-->上海大学计算机学院对双非"前 10%"的表述</b><!--pnid:U1qnIWRB08uxw9N1WG8LeC-->——来自第三方机构整理，未见官网原文，需在官网夏令营通知中核对。</li>
+    <li data-page-node-id="ENKiBoRI9M9qllwIcoPcEb"><b data-page-node-id="AweAGQU8FgbN34L0O1zj2S"><!--pnid:5QiCrZvzrmb8lP4i7Y0t1N-->各校 2028 年度（你这一届）的夏令营通知</b><!--pnid:saQD0ehwTVIdnxqIFfKJuh-->——将于 2027 年 3–6 月陆续发布，门槛每年小幅调整，本文所有门槛须以届时官网原文为准。</li>
+  </ul>
+
+  <div data-page-node-id="Xe47iRqVcFTOIiZo7zSZB4" class="callout warn" style="margin-top:18px">
+    <b data-page-node-id="yqsHAT79kkBdS3vaTYsV5f"><!--pnid:69WAcwaiKWOEYi7Np7vDVC-->关于本文的定位：</b><!--pnid:f90YkcHG2kVBSmI0wjISjU-->这是一份<u data-page-node-id="R8ytEldM6NJZWe0pUPMcYQ"><!--pnid:O62VctMU6N6Q9a0hO1I8cY-->决策框架</u><!--pnid:uxNMAE8mk0jkxkT7ylnzv2-->，不是录取承诺。表中所有百分比都是"申请门槛"，
+    不是"录取概率"。真正的录取线由当年报名者的整体水平决定，而双非在这条线上通常要比门槛再高一档。
+  </div>
+</section>
+
+<footer data-page-node-id="OavLDuP6hIIrH812fGUyHZ">
+  <b data-page-node-id="fJ6BDMtcAfOFhzbrvIVIPd"><!--pnid:aW8QaQecieBhzjnZ14PX8g-->保研路线图 · 2028 届</b><br data-page-node-id="fBKgbRKxCTjnnvlVr7eX0m"><!--pnid:ZIZKP32cvPUeQCRXLQqR5V-->
+  生成日期：2026 年 10 月 27 日 ｜ 最后更新：2026 年 10 月 27 日（补充学院 36/7 名额数据、直博通道、补助细则）<br data-page-node-id="7IRGOW3SxrOgtfAYu2NQiQ"><!--pnid:l4IAI7L7EekuEvKvLCFJIc-->
+  政策基准：2027 年度推免（2026 年 9 月执行）<br data-page-node-id="ewU98CO5sCyGbwnEf9SR6v"><!--pnid:zZJsH0gSho81VnT8T9WuO0-->
+  适用对象：上海对外经贸大学 人工智能专业 · 统计与数据科学学院 · 2028 届本科毕业生
+  <div data-page-node-id="qSH2bX8Ya2kwgDDXM7DVvU" class="src"><!--pnid:gL1hxvGI3D3NjJ9dTtzUh8-->
+    附：官方原件两份，存于同目录 <code data-page-node-id="rYOOQtirGdpaCavNPkzCjm" data-pnid-children="aAc5cqVFr1KIraWC666A1l">官方原文/</code><!--pnid:CEeHNMtxopc32UWJrYmD68--> ——<br data-page-node-id="PyyMgPhwsiWkz5FWQa8aHI"><!--pnid:6pCBzGCso4s6u9BWJYHL9Z-->
+    · 《统计与数据科学学院 2027 年度推免遴选结果公示》（含 36 人名单与分专业名额）<br data-page-node-id="PCQy7eaCzPmmfN8gYsQcuz"><!--pnid:0CZDA8h5Va5tlngKfkLjc1-->
+    · 《统计与数据科学学院 2027 年招收推荐免试研究生（含直博生）工作实施细则》<br data-page-node-id="lyN3gAOhOQcd61PiwdXSrt"><!--pnid:L68kHenhVIL6ZuREztTo9B-->
+    注：本文不构成任何录取保证。所有门槛类数据均标注了来源年度，跨年度使用存在偏差风险。
+  </div>
+</footer>
+
+</div>
+
+<script data-page-node-id="0247XcfUnke31NIK4GRXF6" data-pnid-children="Pf5XCGdvHEj03tQlxAxNti">
+(function(){
+  var boxes = document.querySelectorAll('.check input[type=checkbox]');
+  boxes.forEach(function(b,i){
+    var li = b.closest('li');
+    var key = 'baoyan-ck-' + (b.closest('.check').id) + '-' + i;
+    if(localStorage.getItem(key) === '1'){ b.checked = true; li.classList.add('on'); }
+    b.addEventListener('change', function(){
+      localStorage.setItem(key, b.checked ? '1' : '0');
+      li.classList.toggle('on', b.checked);
+    });
+    li.addEventListener('click', function(e){
+      if(e.target.tagName !== 'INPUT'){ b.checked = !b.checked; b.dispatchEvent(new Event('change')); }
+    });
+  });
+  // 平滑滚动
+  document.querySelectorAll('nav a').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var t = document.querySelector(a.getAttribute('href'));
+      if(t){ window.scrollTo({top: t.offsetTop - 56, behavior:'smooth'}); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
